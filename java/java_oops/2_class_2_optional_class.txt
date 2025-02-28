@@ -1,0 +1,8 @@
+Optional Class 
+    => It is to handle null exception error without adding too many null checks 
+
+Lazy Evaluation 
+    => orElse
+
+Eager Evaluation
+    => orElseGet
