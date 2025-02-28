@@ -1,2 +1,9 @@
 Default Methods 
-    => 
+    => Default Keyword is used
+    => Implementation given in interface 
+    => Can be overridden 
+    
+
+Class Implementing Multiple Interface having same Default Method Signature
+    => Need to specify which implementation to be called 
+    => Interface_name.super.method_name()

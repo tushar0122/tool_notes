@@ -1,0 +1,5 @@
+Static Method 
+    => Not inherited by child class
+    => Cannot be default
+    => Cannot be overridden
+    => Can be hidden by defining in child class
