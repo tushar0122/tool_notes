@@ -1,8 +1,23 @@
-@RestContoller 
+@RestController 
     => It combines @Controller and @ResponseBody to return JSON/XML responses directly.
+
+@RequestBody 
+    => @RequestBody annotation binds the content sent in (POST / PUT) request body with the annotated variable. Since there is no 'body' part in GET request, spring throws HttpMessageNotReadableException to indicate the same.
 
 @RequestParam
     => It extracts query parameters from a request URL.
 
 @PathVariable
     => It extracts values from the URL path.
+
+@Controller
+    => 
+
+Query Params 
+    => ✅ Use Case: When filtering, sorting, or providing optional parameters.
+
+Path Params 
+    => ✅ Use Case: When identifying a specific resource.
+
+Put & Patch 
+    => PATCH and PUT are both HTTP methods used to modify resources on a server. PATCH is used to apply partial updates, while PUT is used to replace the entire resource. 
