@@ -1,0 +1,25 @@
+Abstract Class 
+
+When to use 
+    => You have common logic that can be shared among subclasses.
+    => You want to partially implement behavior and force subclasses to implement certain methods.
+
+=> Use an Interface when:
+    => You want to enforce a contract across multiple unrelated classes.
+    => You need multiple inheritance of behavior (since Java supports multiple interface implementations but only single inheritance).
+    
+Differences
+    => 1. Abstract class
+    => 2. Interface
+Method Implementation	
+    => Can have both implemented and abstract methods.	
+    => Only abstract methods (before Java 8). Java 8+ supports default methods.
+Multiple Inheritance	
+    => A class can extend only one abstract class.	
+    => A class can implement multiple interfaces.
+Fields (Attributes)	
+    => Can have instance variables.	
+    => Only constants (static final).
+Constructor	
+    => Can have a constructor.	
+    => Cannot have a constructor.

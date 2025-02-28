@@ -1,0 +1,4 @@
+Public 
+    => there can be only one public class, interface, enum in a file 
+    => In Java, a source file can contain only one public class. This is because the public class must have the same name as the file, which is required for the compiler to locate and compile the file correctly.
+

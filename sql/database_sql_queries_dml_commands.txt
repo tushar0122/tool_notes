@@ -1,0 +1,5 @@
+DELETE
+    => Removes rows one at a time and records each deletion in the transaction log, allowing rollback. It can have a WHERE clause.
+TRUNCATE
+    => Removes all rows at once without logging individual row deletions. It cannot have a WHERE clause and is faster than DELETE for large data sets.
+    => It comes under ddl command 

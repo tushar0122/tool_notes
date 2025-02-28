@@ -1,0 +1,24 @@
+Constraints 
+    => Common constraints include:
+NOT NULL: Ensures a column cannot have NULL values.
+UNIQUE: Ensures all values in a column are distinct.
+PRIMARY KEY: Uniquely identifies each row in a table.
+FOREIGN KEY: Ensures referential integrity by linking to a primary key in another table.
+CHECK: Ensures that all values in a column satisfy a specific condition.
+DEFAULT: Sets a default value for a column when no value is specified.
+
+DEFAULT Constraint 
+    => The DEFAULT constraint assigns a default value to a column when no value is provided during an INSERT operation. This helps maintain consistent data and simplifies data entry.
+
+UNIQUE
+    => The UNIQUE constraint ensures that all values in a column (or combination of columns) are distinct. This prevents duplicate values and helps maintain data integrity.
+
+Primary Key 
+    => A primary key is a unique identifier for each record in a table. It ensures that no two rows have the same value in the primary key column(s), and it does not allow NULL values.
+
+Foreign Key
+    => A foreign key is a column (or set of columns) in one table that refers to the primary key in another table. It establishes and enforces a relationship between the two tables, ensuring data integrity.
+
+Composite Primary Key 
+    => A composite primary key is a primary key made up of two or more columns. Together, these columns must form a unique combination for each row in the table. It’s used when a single column isn’t sufficient to uniquely identify a record.
+

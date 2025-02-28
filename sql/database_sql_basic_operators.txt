@@ -1,0 +1,14 @@
+SQL
+    => Arithmetic Operators: +, -, *, /, %
+    => Comparison Operators: =, !=, <>, >, <, >=, <=
+    => Logical Operators: AND, OR, NOT
+    => Set Operators: UNION, INTERSECT, EXCEPT
+    => Special Operators: BETWEEN, IN, LIKE, IS NULL
+
+
+UNION
+    => The UNION operator combines the result sets of two or more SELECT queries into a single result set, removing duplicate rows. This is useful when we need a consolidated view of data from multiple tables or queries that have similar structure.
+
+UNION ALL
+    => Includes all rows from each query, including duplicates.
+    => Performance-wise, UNION ALL is faster because it doesn’t require an additional step to remove duplicates.

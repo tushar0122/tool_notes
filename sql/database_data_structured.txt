@@ -1,0 +1,11 @@
+Structured Data 
+    => Data that is organized into a fixed schema, such as rows and columns, making it easy to store, access, and analyze.
+
+Characteristics:
+    => Schema-Dependent: Has a predefined schema, e.g., relational databases.
+    => Format: Stored in tabular formats like SQL databases, spreadsheets.
+    => Accessibility: Easy to query using SQL or other query languages.
+    => Examples:
+        => Customer databases (name, email, phone, etc.).
+        => Financial records (transaction ID, amount, date).
+        => Sensor data (time, temperature, pressure).

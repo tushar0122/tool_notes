@@ -1,0 +1,26 @@
+Unstructured Data 
+    => Unstructured data refers to data that does not have a predefined model or format. It is typically not organized in a way that fits into traditional databases, making it harder to analyze and process with conventional tools.
+
+Characteristics of Unstructured Data
+    =? Lack of Schema: No predefined structure or format.
+    => Complexity: Can contain a mix of text, multimedia, or other formats, making analysis challenging.    
+    => Volume: Often large in size, as it includes raw or primary data.
+    => Storage: Typically stored in data lakes, object storage systems (like AWS S3), or distributed file systems.
+    => Processing: Requires specialized tools like Natural Language Processing (NLP), image recognition algorithms, or big data platforms (e.g., Hadoop, Apache Spark).
+
+Examples of Unstructured Data
+    => Text-Based:
+        => Emails (body content, attachments)
+        => Chat messages
+        => Social media posts (tweets, comments)
+    => Media:
+        => Images (JPG, PNG, etc.)
+        => Videos (MP4, AVI)
+        => Audio files (MP3, WAV)
+    => Logs:
+        => Machine or server logs
+        => Event logs
+    => Web Content:
+        => Web pages
+        => Blogs
+        => PDFs

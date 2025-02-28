@@ -1,0 +1,36 @@
+Streams 
+    => Stream API is used to process collections of objects. A stream in Java is a sequence of objects that supports various methods that can be pipelined to produce the desired result. 
+    => It Enable us to perform operations like filtering, mapping, reducing, and sorting.
+    => Streams don’t change the original data structure, they only provide the result as per the pipelined methods.
+
+
+Intermediate Operations
+    => Intermediate Operations: Operations such as filter(), map(), and sorted() are intermediate operations. These operations are "lazy" because they don't do any work when they're called. Instead, they build an internal pipeline of operations.
+    => Each intermediate operation is lazily executed and returns a stream as a result, hence various intermediate operations can be pipelined. Terminal operations mark the end of the stream and return the result.
+    => Intermediate operations transform a stream into another stream.
+    => Lazy execution doesn't need storage for intermediate results because the operations are applied one element at a time, and no intermediate data is kept. Each element is processed through the stream pipeline only when required by a terminal operation. This makes streams both memory-efficient and fast, particularly when working with large or infinite data sets.
+
+
+Terminal Operations
+    => Terminal operations mark the end of the stream and return the result.
+    => collect()
+    => forEach()
+    => reduce()
+    => count()
+
+Streams Benefits 
+    => No storage 
+    => Can be parallel
+    => Piplelining of functions
+    => Laziness
+
+map 
+    => transform
+    => Returns same structure 
+
+forEach
+    => process 
+
+flatMapToInt 
+    => transform and flatten
+

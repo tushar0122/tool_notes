@@ -1,0 +1,8 @@
+DCL 
+    => These commands control access and permissions to the database objects.
+
+GRANT
+    => Provides specific privileges to users or roles.
+
+REVOKE	
+    => Removes specific privileges from users or roles.

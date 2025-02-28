@@ -1,0 +1,2 @@
+Java Virtual Methods 
+    => By default, all the instance methods in Java are considered as the Virtual function except final, static, and private methods

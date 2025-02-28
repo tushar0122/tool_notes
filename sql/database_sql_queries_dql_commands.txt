@@ -1,0 +1,19 @@
+SELECT 
+The SELECT statement retrieves data from one or more tables. It is the most commonly used command in SQL, allowing users to filter, sort, and display data based on specific criteria.
+
+CASE 
+    => The CASE statement is SQL’s way of implementing conditional logic in queries. It evaluates conditions and returns a value based on the first condition that evaluates to true. If no condition is met, it can return a default value using the ELSE clause.
+
+Group By 
+    => The GROUP BY clause is used to arrange identical data into groups. It is typically used with aggregate functions (such as COUNT, SUM, AVG) to perform calculations on each group rather than on the entire dataset.
+
+WHERE
+    => Filters rows before any grouping takes place.
+
+HAVING
+    => Filters grouped data after the GROUP BY clause has been applied.
+    => In short, WHERE applies to individual rows, while HAVING applies to groups.
+
+ORDER BY
+    => The ORDER BY clause sorts the result set of a query in either ascending (default) or descending order, based on one or more columns. This helps present the data in a more meaningful or readable sequence.
+

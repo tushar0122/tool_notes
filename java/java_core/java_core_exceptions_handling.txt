@@ -1,0 +1,7 @@
+Exceptions Handling
+    => Exception handling in Java is an effective mechanism for managing runtime errors to ensure the application’s regular flow is maintained. Some Common examples of exceptions include ClassNotFoundException, IOException, SQLException, RemoteException, etc. By handling these exceptions, Java enables developers to create robust and fault-tolerant applications.
+
+
+Multiple Exceptions 
+    => We can handle multiple type of exceptions in Java by using multiple catch blocks, each catching a different type of exception.
+

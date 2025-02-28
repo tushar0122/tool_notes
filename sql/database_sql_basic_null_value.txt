@@ -1,0 +1,3 @@
+NULL values 
+NULL represents a missing or unknown value. It is different from zero or an empty string. NULL values indicate that the data is not available or applicable.
+

@@ -1,0 +1,21 @@
+Synchronization 
+    => In Multithreading, Synchronization is crucial for ensuring that multiple threads operate safely on shared resources. Without Synchronization, data inconsistency or corruption can occur when multiple threads try to access and modify shared variables simultaneously. I
+    => In Java, it is a mechanism that ensures that only one thread can access a resource at any given time. This process helps prevent issues such as data inconsistency and race conditions when multiple threads interact with shared resources.
+
+Synchronized Blocks 
+    => Java provides a way to create threads and synchronise their tasks using synchronized blocks. 
+    => A synchronized block in Java is synchronized on some object. Synchronized blocks in Java are marked with the synchronized keyword. 
+    => All synchronized blocks synchronize on the same object and can only have one thread executed inside them at a time. A=> ll other threads attempting to enter the synchronized block are blocked until the thread inside the synchronized block exits the block. If you want to master concurrency and understand how to avoid common pitfalls
+
+
+Types of Synchronization
+    => There are two synchronizations in Java mentioned below:
+        => Process Synchronization
+        => Thread Synchronization
+
+Process Synchronization
+    => Process Synchronization is a technique used to coordinate the execution of multiple processes. It ensures that the shared resources are safe and in order.
+
+Thread Synchronization
+    => Thread Synchronization is used to coordinate and ordering of the execution of the threads in a multi-threaded program. There are two types of thread synchronization are mentioned below:
+

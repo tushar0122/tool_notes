@@ -1,0 +1,3 @@
+Cursor 
+    => A cursor is a database object used to retrieve, manipulate, and traverse through rows in a result set one row at a time. Cursors are helpful when performing operations that must be processed sequentially rather than in a set-based manner.
+

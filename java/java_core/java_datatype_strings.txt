@@ -1,0 +1,18 @@
+Strings 
+    => Strings are immutable in java 
+
+Ways of creating String 
+    => There are two ways to create a string in Java: 
+        => String Literal
+        => Using new Keyword 
+
+String literal 
+    => To make Java more memory efficient (because no new objects are created if it exists already in the string constant pool).
+    => It is preferred to use String literals as it allows JVM to optimize memory allocation.
+
+Using new keyword  
+    => new String("text"); explicitly creates a new and referentially distinct instance of a String object; String s = "text"; may reuse an instance from the string constant pool if one is available.
+    
+String Pool 
+    => In Java, string literals are stored in a special area of memory called the string pool (also known as the string literal pool or intern pool). The string pool is a part of the heap memory, and it is managed by the Java Virtual Machine (JVM).
+

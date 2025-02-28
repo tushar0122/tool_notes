@@ -1,0 +1,4 @@
+Singletion class
+    => Private Constructor 
+    => getInstance Method 
+    => Class Member of class type

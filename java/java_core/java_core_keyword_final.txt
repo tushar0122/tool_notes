@@ -1,0 +1,23 @@
+Final Keyword 
+    => The final Keyword in Java is used as a non-access modifier applicable only to a variable, a method, or a class. It is used to restrict a user in Java.
+
+Final Variables
+    => When a variable is declared as final, its value cannot be changed once it has been initialized. This is useful for declaring constants or other values that should not be modified.
+    => Final variables must be initialized either at the time of declaration or in the constructor of the class. This ensures that the value of the variable is set and cannot be changed.
+    => If the final variable is a reference, this means that the variable cannot be re-bound to reference another object, but the internal state of the object pointed by that reference variable can be changed i.e. you can add or remove elements from the final array or final collection. This property of the final is called non-transitivity
+    => It is good practice to represent final variables in all uppercase, using underscore to separate words.
+
+Blank Final Variable
+    => You can initialize a final variable when it is declared. This approach is the most common. A final variable is called a blank final variable if it is not initialized while declaration. Below are the two ways to initialize a blank final variable.
+    => A blank final static variable can be initialized inside a static block.
+    => A blank final variable can be initialized inside an instance-initializer block or the constructor. If you have more than one constructor in your class then it must be initialized in all of them, otherwise, a compile-time error will be thrown
+
+
+Final Methods 
+    => When a method is declared as final, it cannot be overridden by a subclass. This is useful for methods that are part of a class’s public API and should not be modified by subclasses.
+    => A final method is inherited by child class, but it cannot be overridden or modified in the subclass.
+
+Final classes
+    => When a class is declared as final, it cannot be extended by a subclass. This is useful for classes that are intended to be used as is and should not be modified or extended.
+    => The other use of final with classes is to create an immutable class like the predefined String class. One can not make a class immutable without making it final.
+

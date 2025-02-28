@@ -1,0 +1,26 @@
+Indexes
+    => Indexes are database objects that improve query performance by allowing faster retrieval of rows. They function like a book’s index, making it quicker to find specific data without scanning the entire table. However, indexes require additional storage and can slightly slow down data modification operations.
+    
+Indexing 
+    => Indexing allows the database to locate and access the rows corresponding to a query condition much faster than scanning the entire table. Instead of reading each row sequentially, the database uses the index to jump directly to the relevant data pages. This reduces the number of disk I/O operations and speeds up query execution, especially for large tables.
+
+
+Disadvantages:
+    => Increased storage space for the index structures.
+    => Additional overhead for write operations (INSERT, UPDATE, DELETE), as indexes must be updated whenever the underlying data changes.
+    => Potentially slower bulk data loads or batch inserts due to the need to maintain index integrity.
+    => In short, indexes make read operations faster but can slow down write operations and increase storage requirements.
+
+Clustered Index
+    => Organizes the physical data in the table itself in the order of the indexed column(s).
+    => A table can have only one clustered index.
+    => Improves range queries and queries that sort data.
+    => Default Index Type
+        => When you define a Primary Key constraint on a table, a clustered index is automatically created by the database on the primary key column(s).
+    => Example: If EmployeeID is the clustered index, the rows in the table are stored physically sorted by EmployeeID.
+
+Non-Clustered Index
+    => Maintains a separate structure that contains a reference (or pointer) to the physical data in the table.
+    => A table can have multiple non-clustered indexes.
+    => Useful for specific query conditions that aren’t related to the primary ordering of the data.
+    => Example: A non-clustered index on LastName allows fast lookups by last name even if the table is sorted by another column.

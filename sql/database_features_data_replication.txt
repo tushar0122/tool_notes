@@ -1,0 +1,3 @@
+Data Replication 
+    => Replication is a technique that makes exact copies of the database and stores them across different computers. Database designers use replication to design a fault-tolerant relational database management system. When one of the computers hosting the database fails, other replicas remain operational. Replication is a common practice in distributed computing systems.
+

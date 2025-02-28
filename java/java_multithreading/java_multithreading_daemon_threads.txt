@@ -1,0 +1,5 @@
+Daemon thread 
+    => JVM does not wait for daemon threads to finish their tasks before termination.
+    => They are not used for any critical tasks but to do some supporting tasks.
+    => These threads are normally created by JVM.
+    => These threads are referred to as low priority threads, therefore are especially required for supporting background tasks like garbage collection, releasing memory of unused objects, etc. 

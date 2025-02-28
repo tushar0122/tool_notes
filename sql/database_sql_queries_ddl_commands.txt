@@ -1,0 +1,8 @@
+ALTER 
+The ALTER command is used to modify the structure of an existing database object. This command is essential for adapting our database schema as requirements evolve.
+
+Add or drop a column in a table.
+Change a column’s data type.
+Add or remove constraints.
+Rename columns or tables.
+Adjust indexing or storage settings.

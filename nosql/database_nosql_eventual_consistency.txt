@@ -1,0 +1,13 @@
+Eventual Consistency 
+    => Eventual consistency in NoSQL databases refers to the guarantee that, given time and no further updates, all replicas or nodes will converge to the same state.
+    => This approach is in contrast to immediate consistency models, which typically involve higher latency due to the need for synchronous updates, leading to ACID (Atomicity, Consistency, Isolation, Durability) properties.
+
+How NoSQL Databases Achieve Eventual Consistency
+    => Data Propagation Mechanisms
+        => Gossip Protocols: Nodes communicate updates to a few random nodes, which in turn disseminate the data further. This mechanism is efficient for large clusters but might introduce delays.
+        => Vector Clocks: This mechanism assigns each data piece a unique version number, facilitating easy conflict detection. However, managing vector clocks can be complex.
+    => Conflict Resolution Strategies
+        => Timestamps: In a NoSQL database, timestamps can determine the most recent update, enabling systems to resolve conflicts based on temporal order.
+       => Application Logic: Developers can define custom rules for conflict resolution within the application. This approach is often used when the conflict's nature is domain-specific. 
+        => Automatic Merging: Some NoSQL databases, especially ones using JSON-like documents for storage, feature automatic conflict resolution mechanisms that merge divergent documents intelligently.
+        => Due to the potential for data inconsistency during transitions and conflicts, the flexible nature of NoSQL databases often makes them suitable for use cases where availability and partition tolerance take precedence over absolute data precision.

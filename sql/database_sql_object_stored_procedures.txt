@@ -1,0 +1,12 @@
+Stored Procedure 
+    => A stored procedure is a precompiled set of SQL statements stored in the database. It can take input parameters, perform logic and queries, and return output values or result sets. Stored procedures improve performance and maintainability by centralizing business logic.
+
+Benefits 
+    => Improved Performance
+        => Stored procedures are precompiled and cached in the database, making their execution faster than sending multiple individual queries.
+    => Reduced Network Traffic
+        => By executing complex logic on the server, fewer round trips between the application and database are needed.
+    => Enhanced Security
+        => Stored procedures can restrict direct access to underlying tables, allowing users to execute only authorized operations.
+    => Reusability and Maintenance
+        => Once a procedure is written, it can be reused across multiple applications. If business logic changes, you only need to update the stored procedure, not every application that uses it.

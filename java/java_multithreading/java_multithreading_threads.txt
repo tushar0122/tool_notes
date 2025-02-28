@@ -1,0 +1,17 @@
+Threads
+
+Creating a thread 
+    => Thread class 
+    => Runnable interface
+
+Thread class 
+    => It can be created by extending the Thread class and overriding its run() method
+    => If the class extends the Thread class, the thread can be run by creating an instance of the class and call its start() method:
+
+Runnable interface
+    => Another way to create a thread is to implement the Runnable interface
+    => If the class implements the Runnable interface, the thread can be run by passing an instance of the class to a Thread object's constructor and then calling the thread's start() method:
+
+Join method 
+    => join() method is generally used to pause the execution of a current thread unless and until the specified thread on which join is called is dead or completed. To stop a thread from running until another thread gets ended, this method can be used. It joins the start of a thread execution to the end of another thread’s execution. It is considered the final method of a thread class.
+

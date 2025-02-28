@@ -1,0 +1,35 @@
+Quantifier (Number of occurences)
+    => Zero or more => *
+    => One or more => +
+    => Zero or one => ?
+    => Exactly n occurences => {n}
+    => n or more => {n, }
+    => between n and m => {n, m}
+
+Content
+    => Any digit => \d
+    => Any character => .
+    => Any non digit => \D
+    => Any alphabet  => \w
+    => Any non-word character => \W
+    => Any whitespace character => \s
+    => Any non whitespace character => \S 
+
+Position 
+    => Start of String => ^
+    => End of String => $
+
+Grouping 
+    => regex => ()
+
+In Condition 
+    => regex => []
+
+Not in Condition
+    => regex => [^]
+
+OR Condition
+    => regex => |
+
+Escape Sequence 
+    => \\

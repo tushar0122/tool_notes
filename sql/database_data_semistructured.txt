@@ -1,0 +1,11 @@
+Semi Structured Data 
+    => Data that does not have a rigid schema but still has some organizational properties (tags, markers) to make it easier to analyze.
+
+Characteristics:
+    => Flexible Schema: No strict tabular format, but uses elements like key-value pairs or hierarchies.
+    => Format: Commonly stored in JSON, XML, NoSQL databases, or CSV files with irregular rows.
+    => Accessibility: Requires specialized tools (e.g., XPath for XML, JSON parsers).
+    => Examples:
+    => JSON or XML documents (e.g., metadata, web APIs).
+    => NoSQL database entries (MongoDB, Cassandra).
+    => Emails (structured header, unstructured body text).

@@ -1,0 +1,18 @@
+Method Reference 
+    =>  A method reference in Java is the shorthand syntax for a lambda expression that contains just one method call. 
+    => In general, one doesn’t have to pass arguments to method references.
+
+Uses 
+    => It can be used in place of lambda function
+
+Types of Method References
+    
+    => There are four type method references that are as follows:
+        => Static Method Reference
+            Class::staticMethod;
+        => Instance Method Reference of a particular object
+            obj::instanceMethod;
+        => Instance Method Reference of an arbitrary object of a particular type
+            ObjectType::instanceMethod;
+        => Constructor Reference
+            ClassName::new

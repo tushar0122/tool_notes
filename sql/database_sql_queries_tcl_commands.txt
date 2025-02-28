@@ -1,0 +1,11 @@
+TCL 
+    => These commands manage transactions in the database, ensuring data consistency.
+
+COMMIT	
+    => Saves the current transaction permanently.
+ROLLBACK
+    => Reverts the database to the last committed state.
+SAVEPOINT	
+    => Sets a point within a transaction to roll back to.
+SET TRANSACTION	
+    => Sets properties for a transaction (e.g., isolation level).

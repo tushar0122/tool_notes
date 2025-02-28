@@ -1,0 +1,13 @@
+Temporary Table 
+    => Temporary tables are tables that exist only for the duration of a session or a transaction. They are useful for storing intermediate results, simplifying complex queries, or performing operations on subsets of data without modifying the main tables.
+
+1. Local Temporary Tables:
+
+Prefixed with # (e.g., #TempTable).
+Only visible to the session that created them.
+Automatically dropped when the session ends.
+2. Global Temporary Tables:
+
+Prefixed with ## (e.g., ##GlobalTempTable).
+Visible to all sessions.
+Dropped when all sessions that reference them are closed.

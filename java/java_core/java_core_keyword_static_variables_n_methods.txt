@@ -1,0 +1,21 @@
+Static Variables Methods 
+    => The static keyword is used to share the same variable or method of a given class. 
+
+Static Variables
+    => Static variables are the variables that once declared then a single copy of the variable is created and shared among all objects at the class level.
+    => Static variable can call by directly with the help of class only, we do not need to create object for the class in this.
+
+Static Methods 
+    => Static methods have access to class variables (static variables) without using the class’s object (instance).
+    => In a static environment, this and super aren’t allowed to be used.
+    => They cannot be overridden as they use static binding at compile time.
+    => If both superclass and subclass have static methods with the same name, it is called Method Hiding, where the subclass method hides the superclass method.
+
+
+Why main method is static 
+    => It’s because calling a static method isn’t needed of the object. If it were a non-static method, JVM would first build an object before calling the main() method, resulting in an extra memory allocation difficulty.
+
+
+Instance method 
+    => It can access all attributes of a class.	
+    => By default, all the instance methods in Java are considered as the Virtual function except final, static, and private methods

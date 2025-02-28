@@ -1,0 +1,2 @@
+Is Java Pure Object Oriented Programming Language 
+    => No, because it does contain primitive type

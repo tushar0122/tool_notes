@@ -1,0 +1,73 @@
+NoSQL 
+
+=>  Schema Flexibility (Dynamic and Evolving Data)
+    Use NoSQL when:
+
+    Your application deals with unstructured or semi-structured data.
+    The schema may evolve over time or is not fixed (e.g., when the data can change frequently or has irregular structures).
+    You don’t want to enforce strict schema definitions up front, allowing for flexibility in how data is represented.
+    SQL Databases require a predefined schema with structured tables, and changing the schema (like adding new columns) can be more complex.
+
+    Example: An application that stores user activity logs with varying attributes (e.g., user_id, timestamp, device, location) that might change over time.
+
+=> Scalability (Horizontal Scaling)
+Use NoSQL when:
+
+You need horizontal scalability, meaning you need to distribute your data across many servers to handle large volumes of data or high traffic.
+You require the database to easily scale out across multiple machines or data centers.
+SQL Databases typically scale vertically (by upgrading the hardware of a single server), which can become costly or challenging when handling massive workloads or big data.
+
+Example: Applications like social media or e-commerce platforms that require handling petabytes of data and scaling out as user traffic grows.
+
+3. High Throughput with Low Latency
+Use NoSQL when:
+
+You need to perform fast reads and writes at a very high volume (e.g., millions of operations per second).
+Your application requires low-latency access to data (instantaneous read and write operations).
+SQL Databases can handle high transaction rates but are usually optimized for consistent transactions rather than raw throughput.
+
+Example: IoT systems that need to ingest large amounts of real-time data, such as sensor readings, at high speed.
+
+4. Distributed Systems and Availability
+Use NoSQL when:
+
+You need to design a distributed system with high availability and fault tolerance.
+Your application requires eventual consistency rather than strict consistency across all nodes.
+SQL Databases typically focus on ACID properties (Atomicity, Consistency, Isolation, Durability), which may hinder distributed setups and the ability to tolerate network failures across nodes. NoSQL systems, on the other hand, often follow the CAP theorem (Consistency, Availability, Partition tolerance), prioritizing availability and partition tolerance.
+
+Example: Global e-commerce platforms with users spread across multiple continents who need to access data at all times, even if some servers go down.
+
+5. Complex Queries and Joins
+Use SQL when:
+
+Your application requires complex queries, joins, and transactions.
+You need to use relational data models where entities are tightly interconnected, and you require sophisticated SQL queries with filtering, aggregating, and joining tables.
+NoSQL databases generally lack support for complex joins or multi-table queries, although they provide other features like scalability, flexibility, and high availability.
+
+Example: Banking systems where financial transactions need to be strongly consistent and often involve multiple related tables, requiring complex joins and ACID guarantees.
+
+6. Data Consistency
+Use SQL when:
+
+You require strong consistency for all transactions and a reliable way of ensuring that the data is always in a valid state (ACID properties).
+NoSQL databases often prioritize availability and partition tolerance over strong consistency (in line with the CAP theorem). This means they might be eventually consistent, which is acceptable in scenarios where immediate consistency isn't critical.
+
+Example: Enterprise resource planning (ERP) systems, where data integrity is critical, and operations like order processing must be fully consistent.
+
+7. Large-Scale Analytical Queries
+Use NoSQL when:
+
+You are working with big data and need a data store that can handle large-scale data in real-time or over a distributed system.
+Your application needs to store data in a wide-column format, like time-series data or key-value pairs, which is easier to analyze in NoSQL systems.
+SQL databases are often more suitable for OLAP (Online Analytical Processing) and structured reporting, while NoSQL is designed for flexible and rapid data access in massive datasets.
+
+Example: Log analytics systems or sensor data platforms that need to store, process, and analyze large datasets quickly.
+
+8. Cost Efficiency
+Use NoSQL when:
+
+You need to manage a large volume of data with a low-cost, distributed architecture.
+NoSQL databases often scale more cost-effectively because they rely on commodity hardware and horizontal scaling.
+SQL databases can incur higher costs due to vertical scaling and may require specialized infrastructure.
+
+Example: Real-time recommendation engines where data is continuously ingested and needs to be stored in a distributed fashion at scale.

@@ -1,0 +1,11 @@
+String 
+    => It is immutable
+
+StringBuffer 
+    => It is mutable
+    => It is thread safe class , we can use it when we have multi threaded environment and shared object of string buffer i.e, used by mutiple thread. As it is thread safe so there is extra overhead, so it is mainly used for multithreaded program.
+
+StringBuilder 
+    => It is mutable
+    => It is not thread safe. It is used only within the thread , so there is no extra overhead , so it is mainly used for single threaded program.
+

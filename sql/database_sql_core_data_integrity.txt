@@ -1,0 +1,13 @@
+Data integrity
+    => Data integrity refers to the accuracy, consistency, and reliability of the data stored in the database. SQL databases maintain data integrity through several mechanisms:
+
+Constraints
+    => Ensuring that certain conditions are always met. For example, NOT NULL ensures a column cannot have missing values, FOREIGN KEY ensures a valid relationship between tables, and UNIQUE ensures no duplicate values.
+Transactions
+    => Ensuring that a series of operations either all succeed or all fail, preserving data consistency.
+Triggers
+    => Automatically enforcing rules or validations before or after changes to data.
+Normalization
+    => Organizing data into multiple related tables to minimize redundancy and prevent anomalies.
+
+These measures collectively ensure that the data remains reliable and meaningful over time

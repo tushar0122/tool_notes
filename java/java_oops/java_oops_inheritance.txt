@@ -1,0 +1,17 @@
+Inheritance
+
+Constraints     
+    => Constructor
+        => Child Class must class Parent class Constructor
+        => If Child Class not call then Parent Class should have no argument Constructor
+        => Java will generate no arg constructor by default if no constructor is defined
+    => Methods 
+        => You can increase the scope of methods by access modifiers in subclass, you may decrese it
+
+Default Ways to define 
+    => create public class, need to access in separate submodules 
+    => Create public methods 
+    => For abstract class, have protected fields 
+
+Lombok Annotation 
+    => Use @SuperBuilder in class and base class to avoid creating constructor

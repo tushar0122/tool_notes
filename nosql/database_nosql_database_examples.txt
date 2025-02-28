@@ -1,0 +1,28 @@
+Key Value Pair 
+    => Redis 
+    => AmazonDyanmoDB 
+    => GCP MemoryStore
+
+Document 
+    => MongoDB 
+        => Use BJSON (Binary JSON Format)
+    => CouchBase
+
+Graph 
+    => Neo4j 
+    => Amazon Neptune
+    => TigerDB
+
+Column View Presentation 
+    => Apache Cassendra
+    => HBase
+    => Google BigTable
+
+Time Series 
+    => InfluxDB 
+
+Object Oriented Database 
+    => ObjectDB 
+
+MultiModel databases
+    => OrientDB

@@ -1,0 +1,55 @@
+Sharding 
+    => Database sharding is the process of storing a large database across multiple machines. A single machine, or database server, can store and process only a limited amount of data.
+    => Database sharding overcomes this limitation by splitting data into smaller chunks, called shards, and storing them across several database servers. All database servers usually have the same underlying technologies, and they work together to store and process large volumes of data.
+
+When Sharding is needed 
+    => As an application grows, the number of application users and the amount of data it stores increase over time. The database becomes a bottleneck if the data volume becomes too large and too many users attempt to use the application to read or save information simultaneously. The application slows down and affects customer experience. Database sharding is one of the methods to solve this problem because it enables parallel processing of smaller datasets across shards.
+
+Shading Advantages
+    => Improve response time: Data retrieval takes longer on a single large database. The database management system needs to search through many rows to retrieve the correct data. By contrast, data shards have fewer rows than the entire database. Therefore, it takes less time to retrieve specific information, or run a query, from a sharded database. 
+    => Avoid total service outage: If the computer hosting the database fails, the application that depends on the database fails too. Database sharding prevents this by distributing parts of the database into different computers. Failure of one of the computers does not shut down the application because it can operate with other functional shards. Sharding is also often done in combination with data replication across shards. So, if one shard becomes unavailable, the data can be accessed and restored from an alternate shard.
+    => Scale efficiently: A growing database consumes more computing resources and eventually reaches storage capacity. Organizations can use database sharding to add more computing resources to support database scaling. They can add new shards at runtime without shutting down the application for maintenance.
+
+Shards 
+    => The partitioned data chunks are called logical shards. The machine that stores the logical shard is called a physical shard or database node. A physical shard can contain multiple logical shards. 
+
+Shard Key 
+    => Software developers use a shard key to determine how to partition the dataset. A column in the dataset determines which rows of data group together to form a shard. Database designers choose a shard key from an existing column or create a new one.
+
+Shared Nothing Architecture 
+    => Database sharding operates on a shared-nothing architecture. Each physical shard operates independently and is unaware of other shards. Only the physical shards that contain the data that you request will process the data in parallel for you. 
+
+Sharding SQL 
+    => Unlike automatic horizontal scaling in NoSQL, sharding in SQL databases requires careful design and manual management.
+    => Sharding introduces complexity in query execution, and applications need to be aware of which shard holds the data they're querying. Joins across multiple shards can become particularly challenging.
+
+Methods of Sharding 
+    => Range-based sharding
+        => Range-based sharding, or dynamic sharding, splits database rows based on a range of values. Then the database designer assigns a shard key to the respective range. For example, the database designer partitions the data according to the first alphabet in the customer's name as follows. 
+    => Hashed Sharding
+        => Hashed sharding assigns the shard key to each row of the database by using a mathematical formula called a hash function. The hash function takes the information from the row and produces a hash value. The application uses the hash value as a shard key and stores the information in the corresponding physical shard.
+    => Directory Sharding 
+        => Directory sharding uses a lookup table to match database information to the corresponding physical shard. A lookup table is like a table on a spreadsheet that links a database column to a shard key. For example, the following diagram shows a lookup table for clothing colors.
+    => Geo sharding 
+        => Geo sharding splits and stores database information according to geographical location. For example, a dating service website uses a database to store customer information from various cities as follows. 
+
+Optimize database sharding for even distribution 
+    => When a data overload occurs on specific physical shards although others remain underloaded, it results in database hotspots. Hotspots slow down the retrieval process on the database, defeating the purpose of data sharding. 
+    Good shard-key selection can evenly distribute data across multiple shards. When choosing a shard key, database designers should consider the following factors. 
+    => Cardinality 
+        => Cardinality describes the possible values of the shard key. It determines the maximum number of possible shards on separate column-oriented databases. For example, if the database designer chooses a yes/no data field as a shard key, the number of shards is restricted to two.
+    => Frequency 
+        => Frequency is the probability of storing specific information in a particular shard. For example, a database designer chooses age as a shard key for a fitness website. Most of the records might go into nodes for subscribers aged 30–45 and result in database hotspots. 
+    => Monotonic Change 
+        => Monotonic change is the rate of change of the shard key. A monotonically increasing or decreasing shard key results in unbalanced shards. For example, a feedback database is split into three different physical shards as follows:
+        As the business grows, customers will make more than 21 or more purchases. The application stores their feedback in Shard C. This results in an unbalanced shard because Shard C contains more feedback records than other shards.
+
+
+Challenges in Sharding 
+    => Data hotspots
+        => Some of the shards become unbalanced due to the uneven distribution of data. For example, a single physical shard that contains customer names starting with A receives more data than others. This physical shard will use more computing resources than others.
+        Solution
+        You can distribute data evenly by using optimal shard keys. Some datasets are better suited for sharding than others
+    => Operational complexity
+        => Database sharding creates operational complexity. Instead of managing a single database, developers have to manage multiple database nodes. When they are retrieving information, developers must query several shards and combine the pieces of information together. These retrieval operations can complicate analytics.
+    => 
