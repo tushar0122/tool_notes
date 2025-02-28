@@ -1,0 +1,5 @@
+@EnableAutoConfiguration 
+    => Tells Spring Boot to automatically configure the application based on the dependencies present in the classpath This reduces the need for manual configuration and setup, making it easier to create productionready applications.
+
+Spring Profiles
+    => Spring Profiles are used to define different configurations for different environments (dev, prod, test, etc.).

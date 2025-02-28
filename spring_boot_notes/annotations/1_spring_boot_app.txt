@@ -1,3 +1,23 @@
+Spring Boot 
+    => Spring Boot is a framework that simplifies Java development by providing convention-over-configuration, embedded servers, and auto-configuration.
+
+Spring Boot vs Spring 
+    => Spring Boot simplifies Spring development by removing the need for extensive XML configurations, providing an embedded server, and using auto-configuration.
+
+Key Features 
+    => Auto-configuration
+    => embedded servers (Tomcat, Jetty)
+    => Spring Boot Starters
+    => Actuator
+    => Microservices support.
+
+Spring Boot Starter 
+    => A dependency that groups commonly used libraries together. Example: spring-boot-starter-web for building web applications.
+
+Actuator
+    => A tool that provides monitoring and management endpoints.
+
+
 @SpringBootApplication
     => It is a combination of below 
         => @Configuration
@@ -5,8 +25,7 @@
         => @ComponentScan
 
 @ComponentScan
-    => It tells Spring Boot where to scan for components like services and controllers.
-
+    => Tells Spring to scan the package (and sub-packages) for components, configurations, and services. This allows Spring to discover and register beans, such as @Controller, @Service, @Repository, etc.
 
 @EnableAutoConfiguration
     => It detects the dependencies in the classpath and configures beans automatically using @EnableAutoConfiguration.

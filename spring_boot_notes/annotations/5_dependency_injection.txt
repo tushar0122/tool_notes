@@ -1,0 +1,2 @@
+@Value 
+    => The @Value annotation is used to inject property values into Spring beans.

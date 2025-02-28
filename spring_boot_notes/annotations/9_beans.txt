@@ -1,3 +1,6 @@
+@Configuration 
+    => Marks the class as a source of bean definitions for the application context. It is equivalent to using XML configuration in traditional Spring, but in a more concise and Java-based way.
+
 @Bean 
     => Defines beans explicitly in a configuration class.
 
