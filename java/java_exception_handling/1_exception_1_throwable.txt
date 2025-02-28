@@ -1,0 +1,20 @@
+Exception and Error 
+    => Exception in Java is an error condition that occurs when something wrong happens during the program execution.
+    => All Exceptions and error are subtypes of class throwable
+
+Error 
+    => Error is used by the Java run-time system(JVM) to indicate errors having to do with the run-time environment itself(JRE).
+    => Errors represent irrecoverable conditions such as Java virtual machine (JVM) 
+    => StackOverflowError 
+    => OutofMemoryError
+    => running out of memory
+    => memory leaks
+    => stack overflow errors
+    => library incompatibility
+    => infinite recursion, etc.
+    => Errors are usually beyond the control of the programmer, and we should not try to handle errors.
+
+Exception
+    => Exception indicates conditions that a reasonable application might try to catch
+    => Caused by conditions in the program such as invalid input or logic errors.
+

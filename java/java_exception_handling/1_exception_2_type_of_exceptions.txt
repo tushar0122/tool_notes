@@ -1,0 +1,8 @@
+Checked Exceptions 
+    => Compile Time Exceptions
+    => 
+
+Unchecked Exceptions
+    => Run Time Exceptions
+    => ArrayIndexOutOfBoundException 
+    => 
