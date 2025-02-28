@@ -14,4 +14,8 @@ Key Features
 Spring Boot Starter 
     => A dependency that groups commonly used libraries together. Example: spring-boot-starter-web for building web applications.
 
+Actuator
+    => A tool that provides monitoring and management endpoints.
+
+
 
