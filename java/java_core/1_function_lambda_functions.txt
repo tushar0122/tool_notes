@@ -1,0 +1,2 @@
+Instance
+    => It is to create instance of functional interface

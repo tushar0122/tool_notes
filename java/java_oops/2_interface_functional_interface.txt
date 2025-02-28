@@ -2,6 +2,9 @@ Functional Interaface
     => Interface having one abstract method only.
     => It can have multiple default and static methods.
 
+Instance of functional interface
+    => lambda expressions is to create instance of functional interface
+
 Examples 
     => Runnable
     => ActionListener
