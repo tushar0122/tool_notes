@@ -1,0 +1,15 @@
+@SpringBootApplication
+    => It is a combination of below 
+        => @Configuration
+        => @EnableAutoConfiguration 
+        => @ComponentScan
+
+@ComponentScan
+    => It tells Spring Boot where to scan for components like services and controllers.
+
+
+@EnableAutoConfiguration
+    => It detects the dependencies in the classpath and configures beans automatically using @EnableAutoConfiguration.
+    => To oveeride auto configuration use application.properties or application.yml.
+
+

@@ -1,0 +1,3 @@
+@Bean 
+    => Defines beans explicitly in a configuration class.
+

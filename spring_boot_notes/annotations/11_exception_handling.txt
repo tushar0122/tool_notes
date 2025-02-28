@@ -1,0 +1,2 @@
+Using @ExceptionHandler or @ControllerAdvice for global exception handling.
+

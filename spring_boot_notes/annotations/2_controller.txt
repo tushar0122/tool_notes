@@ -1,0 +1,8 @@
+@RestContoller 
+    => It combines @Controller and @ResponseBody to return JSON/XML responses directly.
+
+@RequestParam
+    => It extracts query parameters from a request URL.
+
+@PathVariable
+    => It extracts values from the URL path.
