@@ -1,0 +1,14 @@
+Collector Class 
+    => It is used to stream operations
+    => It has to utility of operations
+
+Methods 
+    => Collectors.toList()
+    => Collectors.toSet()
+    => Collectors.toCollection(List::new)
+
+Lazy Evaluation 
+    => orElse
+
+Eager Evaluation
+    => orElseGet
