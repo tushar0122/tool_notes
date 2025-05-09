@@ -1,0 +1,23 @@
+8. What causes memory leaks in Java?
+Answer:
+
+Unintentional object references (e.g., in static fields, caches, listeners).
+
+Inner classes holding reference to outer class.
+
+Not closing JDBC/IO resources.
+
+Misuse of collections like HashMap with poor equals()/hashCode().
+
+9. How do you avoid OutOfMemoryError in Java?
+Answer:
+
+Set appropriate -Xmx and -Xms.
+
+Tune GC for your workload.
+
+Close resources properly.
+
+Monitor heap usage.
+
+Use weak references (WeakReference, SoftReference) for cacheable objects.

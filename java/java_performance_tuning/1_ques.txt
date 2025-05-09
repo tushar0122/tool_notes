@@ -1,0 +1,13 @@
+Use tools like JVisualVM, JConsole, or Java Mission Control (JMC) to monitor heap, CPU, GC activity.
+
+Profilers like YourKit, JProfiler, and async-profiler help detect hotspots.
+
+Look for:
+
+High CPU usage
+
+Long GC pauses
+
+Thread contention or deadlocks
+
+High memory usage or memory leaks

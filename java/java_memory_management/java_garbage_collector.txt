@@ -1,0 +1,12 @@
+7. What are the different garbage collectors in Java?
+Answer:
+
+Serial GC: Single-threaded, used for small applications.
+
+Parallel GC: Multi-threaded, throughput-focused.
+
+CMS (Concurrent Mark Sweep): Low pause time, concurrent collection.
+
+G1 GC: Balanced GC, good for large heaps.
+
+ZGC & Shenandoah: Ultra-low pause GC (Java 11+).

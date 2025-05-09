@@ -1,0 +1,34 @@
+1. What are upstream and downstream services in microservices architecture?
+Answer:
+
+Upstream service: A service that sends data or triggers a request to another service. It's the source of information.
+
+Downstream service: A service that receives data or a request from another service. It consumes the output of the upstream service.
+
+❓2. Can a microservice be both upstream and downstream?
+Answer:
+Yes. A microservice can act as:
+
+Upstream for one service (sending requests)
+
+Downstream for another (receiving requests)
+
+📌 Example:
+
+Payment Service is downstream to Order Service
+
+But upstream to Notification Service for payment success messages.
+
+❓3. How do you handle failures in downstream services?
+Answer:
+To handle downstream failures:
+
+Use Circuit Breaker (e.g., Netflix Hystrix, Resilience4j)
+
+Implement Retries with backoff
+
+Use Fallbacks to return default responses
+
+Monitor downstream health with heartbeat checks
+
+Use timeouts to avoid waiting too long

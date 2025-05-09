@@ -1,0 +1,8 @@
+Well, String is a class, and strings in Java are treated as an object, hence the object of String class will be stored in Heap, not in the stack area. Let’s go deep into the topic. As we all know we can create string objects in two ways i.e 
+
+By string literal 
+By using the ‘new’ keyword 
+
+
+The intern() method in Java is used to return the canonical representation of a string from the String Pool. When invoked, it checks whether the string exists in the pool:
+

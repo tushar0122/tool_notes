@@ -1,0 +1,5 @@
+Messaging Queue
+    =>  Messaging enables asynchronous communication between components in distributed systems. It decouples producers and consumers, improving scalability and fault tolerance.
+
+Q4. What is a Dead Letter Queue (DLQ)?
+A: A DLQ stores messages that cannot be delivered or processed successfully, even after retries.

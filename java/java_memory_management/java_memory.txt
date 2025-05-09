@@ -1,0 +1,9 @@
+6. How does memory management work in Java?
+Answer:
+
+Java uses automatic garbage collection (GC) to reclaim memory.
+Memory areas:
+    Heap: Stores objects.
+    Stack: Stores method frames and local variables.
+    Metaspace (post Java 8): Stores class metadata.
+    The JVM manages memory allocation and deallocation

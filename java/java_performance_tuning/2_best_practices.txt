@@ -1,0 +1,27 @@
+2. What are Java performance best practices you follow?
+Answer:
+
+Use StringBuilder instead of String concatenation in loops.
+
+Avoid unnecessary object creation.
+
+Use efficient data structures (e.g., ArrayList vs LinkedList, HashMap vs TreeMap).
+
+Apply lazy initialization where possible.
+
+Optimize SQL queries in case of DB interaction.
+
+Use caching (e.g., Caffeine, Redis).
+
+Tune thread pools, connection pools.
+
+3. What are some JVM options for performance tuning?
+Answer:
+
+-Xms, -Xmx: Set initial and max heap size.
+
+-XX:+UseG1GC: Use G1 Garbage Collector for better performance on large heaps.
+
+-XX:+PrintGCDetails, -Xlog:gc*: Log GC info.
+
+-XX:+HeapDumpOnOutOfMemoryError: Dump heap on OOM
