@@ -1,0 +1,11 @@
+Executors.newFixedThreadPool(4)
+
+Runnable
+    => executor.execute()
+
+Callable
+    => Future<T> future = executor.submit()
+    => T val = future.get()
+
+
+executor.shutDown()

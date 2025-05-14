@@ -1,0 +1,3 @@
+Runnable 
+    => Doesn't Return value 
+    => Used with thread class

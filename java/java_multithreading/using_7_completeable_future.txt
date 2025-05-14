@@ -1,0 +1,4 @@
+CompleteableFuture.runAsSync()
+    => Does not return a value 
+CompleteableFuture.supplyAsSync
+    => Returns a value
