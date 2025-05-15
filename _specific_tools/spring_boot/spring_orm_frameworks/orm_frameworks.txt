@@ -1,0 +1,12 @@
+ORM frameworks in Spring Boot are tools that help you map Java objects to database tables and handle database operations easily without writing lots of SQL.
+
+Here are the key ORM frameworks commonly used with Spring Boot:
+    => Hibernate
+    => Spring JPA 
+
+Hibernate 
+    => Hibernate is implementation of JPA Specification
+
+Spring Data JPA 
+    => It is built on top of Hibernate
+    => It requires less boilerplate code 
