@@ -1,0 +1,34 @@
+Common System Quality Attributes
+    => Performance: 
+        => Describes the system's responsiveness, throughput, and resource consumption levels, typically under specific conditions. 
+        => For instance, the system might need to perform optimally when handling a large number of concurrent users or a heavy workload.
+
+    => Reliability: 
+        => Refers to the system's ability to perform consistently and accurately, without unexpected failures. Systems with high reliability often integrate fault tolerance mechanisms and have a defined recovery strategy in place, like data backups or redundant components.
+
+    => Availability: 
+        => This attribute specifies the system's uptime and accessibility. It's often expressed as a percentage of time the system is expected to be operational. For example, "99.99% uptime."
+
+    => Security: 
+        => A mandatory system attribute that addresses the protection of data and resources from unauthorized access, breaches, or corruption. It is vital for systems where data confidentiality, integrity, and availability are paramount.
+
+    => Maintainability: 
+        => Represents a system's ease of maintaining or modifying its components. It focuses on the efficiency of repairs, upgrades, and adaptions. Key metrics include time for updates, code complexity post-changes, and number of errors after a modification.
+
+    => Portability: 
+        => Defines a system's adaptability to run across different environments, such as diverse hardware, operating systems, or cloud providers. A more portable system is generally preferred as it offers flexibility and future-proofing.
+
+    => Scalability: 
+        => Refers to the system's ability to accommodate growing workloads. It might be realized through vertical scaling (upgrading hardware) or horizontal scaling (adding more instances).
+
+    => Usability: 
+        => Emphasizes the system's ease of use and intuitive operation, catering to user experience aspects.
+
+    => Interoperability: 
+        => Describes a system's capability to communicate and share data with other systems or components, and its compatibility with different technologies.
+
+    => Testability: 
+        => The degree to which a system facilitates the generation of test cases and testing processes.
+
+    => Flexibility: 
+        => Represents the system's capacity to adapt to new situations through customization.

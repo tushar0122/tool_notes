@@ -1,0 +1,20 @@
+Before jumping into methods, understand the levels of consistency:
+
+Strong Consistency
+Every read returns the latest write (like a single-node DB).
+
+Eventual Consistency
+All nodes will eventually converge to the same state.
+
+Causal Consistency
+    => Preserves the cause-effect relationship.
+    => Casual consistency (often confused with causal consistency) is a consistency model used in distributed systems, especially in databases and distributed caches, to manage how updates are seen by different nodes or clients.
+    => Stronger than eventual consistency
+
+Read-Your-Writes Consistency
+    => A client always sees its own updates.
+    => ✅ If a client writes data, any subsequent reads by that same client will reflect that write.
+ 
+
+Session Consistency
+    => Guarantees within a session, not globally.

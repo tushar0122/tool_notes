@@ -1,0 +1,55 @@
+Decomposition Patterns
+    => Decompose by Business Functionality
+    => Decompose by Subdomain
+
+
+Business Functionality
+    => Good knowlegde of Business Functions/Capabilities to divide properly
+    => Divide based on functionality
+
+Subdomains
+    => Domain driven design 
+    => Functionality can have subdomains 
+
+
+Strangler Pattern
+    => Refactor to Microservice
+    => When you have monolithic service and you need to refactor into Microservice
+    => Distribution By 
+        => Traffice wise
+        => Initally 10 percent then 20 percent then 30 percent ...then 100
+
+Data Management in Microservice
+    => Database for each Microservice
+    => Shared Database
+
+Database for each service 
+    Usecase
+        => When specific data needs to be scaled 
+
+Shared database
+    Advantage
+        => Easily Join 
+        => Maintaining transactional property
+
+Saga Pattern 
+    => To resolve challenge while Maintaining transactional property in distributed database
+    => Sequence of local transaction
+    => Event 
+        => Commit 
+        => Sequence of transaction
+    => Compensation Event
+        => Rollback
+
+Saga Pattery
+    => Choregraphy 
+        => Service contact with each other
+    => Orchestrator 
+        => Contact with services 
+        => Service don't contact with each other 
+
+CQRS Pattern
+    => To resolve challenge while joining tables in distributed database
+    => Command Query Request Seggregation
+        => Create Update Delete 
+        => Select Separate database

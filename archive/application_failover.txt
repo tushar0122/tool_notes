@@ -1,0 +1,15 @@
+Request Failover
+        => Messaging Queue
+
+Server Pod Failover
+        => Horizontal Scaling (with load balancer)
+
+No 
+    => Stateful Api 
+    => Stick Sessions 
+
+Region Failover
+        => Multiple Data Centers
+
+Database Failover
+    => Database replication

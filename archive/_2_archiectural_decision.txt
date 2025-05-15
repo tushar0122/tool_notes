@@ -1,0 +1,4 @@
+Architectural Decisions
+    => Architectural patterns and styles, as well as design strategies, are thoroughly informed by quality attributes, ensuring that the completed software system best meets its operational goals.
+    => For instance, a system focusing on high availability like a cloud-based ERP might adopt a microservices architecture and utilize load balancers and auto-scaling clusters.
+    => In contrast, a system that requires high reliability, such as a medical equipment monitoring system, might employ a modular architecture with strict data consistency mechanisms and undergo stringent testing procedures.

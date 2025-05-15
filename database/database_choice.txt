@@ -1,0 +1,24 @@
+Database 
+
+Database Choice
+    => Based on Number of Read Write we choose database 
+    => Based on related and unrelated data 
+
+SQL 
+    => Data size upto millions
+
+NoSQL 
+    => Data size billions and beyond
+    => Need low latency
+
+Graph Database 
+    => To store social networks 
+
+Key/Value Pair 
+    => Easily Scalable
+    => HBase, Cassandra
+
+Columar database/Bigquery
+    => More read operations
+    => Minimal right operations 
+    => Billions of records

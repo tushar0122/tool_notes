@@ -1,0 +1,17 @@
+Component
+    => Represent modular parts of the system that encapsulate functionalities. Components can be software classes, collections of classes, or subsystems.
+    => Symbol
+        =>  Rectangles with the component stereotype («component»).
+    => Function
+        =>  Define and encapsulate functionality, ensuring modularity and reusability.
+    => Example 
+        => OnlineStore
+
+Interface
+    => Specify a set of operations that a component offers or requires, serving as a contract between the component and its environment.
+
+Required Interface
+    => Half circle 
+
+Lollipop Interface
+    => 

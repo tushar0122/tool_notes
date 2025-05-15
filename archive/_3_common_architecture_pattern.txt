@@ -1,0 +1,30 @@
+Common Architectural Patterns
+    => Layers: 
+        => Segregates functionality based on roles like presentation, domain logic, and data access.
+
+    => MVC: 
+        => Divides an application into three interconnected components: Model, View, and Controller, each with specific responsibilities.
+
+    => REST: 
+        => Utilizes common HTTP verbs and status codes, along with stateless communication, for easy data transfer in client-server setups.
+
+    => Event-Driven: 
+        => Emphasizes communication through events, with publishers and subscribers decoupled from one another.
+
+    => Microkernel: 
+        => Centralizes core operations in a lightweight kernel, while other services can be dynamically loaded and interact via messaging.
+
+    => Microservices: 
+        => Distributes applications into small, independently deployable services that communicate via network calls.
+
+    => Space-Based: 
+        => Leverages a distributed data grid for data sharing and event-driven workflows.
+
+    => Client-Server: 
+        => Divides an application into client-side and server-side components, with the server providing resources or services.
+
+    => Peer-to-Peer (P2P): 
+        => Emphasizes equal share in roles for nodes, promoting decentralized communication and resources sharing.
+
+    => Domain-Driven Design (DDD): 
+        => Encourages close alignment between development and a domain model, integrating logic and data into one unit.

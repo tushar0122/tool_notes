@@ -1,0 +1,3 @@
+Approach 
+    => Clarify requirements functional and non functional  
+    => Map requirements to High Level Design

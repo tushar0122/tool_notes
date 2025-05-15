@@ -1,0 +1,18 @@
+Types of NoSQL Database
+    Key Value
+    Graph
+    Document
+    Column 
+
+Database
+    => Join operation are generally not supported
+
+Used when 
+    => If application required super low latency 
+    => If data is unstructed or non related data 
+    => You need to store massive amount of data 
+    => You only need to serialize and deserialize data (JSON, XML, YAML, etc.).
+        => Schema less 
+        => No strict Schema 
+        => No SQL joins, foreqign keys 
+        => Direct storing as JSON or BJSON like a Document

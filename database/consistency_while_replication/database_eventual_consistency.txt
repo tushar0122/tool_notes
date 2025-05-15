@@ -1,0 +1,23 @@
+Use Quorum-Based Reads and Writes
+A quorum is the minimum number of nodes in a distributed system that must agree (respond) to a read or write operation to consider it successful.
+If:
+N = total number of replica nodes for a data item
+W = number of replicas that must acknowledge a write
+R = number of replicas that must respond to a read
+This inequality ensures that:
+
+There is at least one replica that has the latest write and is guaranteed to be part of every read quorum.
+
+Here’s how it works:
+
+✅ Write Path
+A write is sent to all N replicas.
+Only W replicas need to acknowledge it for the write to be considered successful.
+These W replicas now hold the latest version of the data.
+
+✅ Read Path
+A read request is sent to all N replicas.
+Only R replicas need to respond.
+If R + W > N, then at least one node that acknowledged the latest write will also be in the read quorum.
+Therefore, that node can serve the latest data (or help the system detect and reconcile stale data).
+

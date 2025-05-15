@@ -1,0 +1,26 @@
+Vertical Scaling 
+
+Usecase 
+    => When low traffic
+
+Disadvantage 
+    => Limited CPU and memory available can't scale infinite.
+    => No Failover mechanism as no redundancy
+
+Horizontal Scaling 
+
+Advantage 
+    => It handles failover 
+
+Components 
+    => Load Balancer 
+        
+Load Balancer
+
+Features 
+    => If one server goes down, it pools new server from server pool 
+    => It distributes the load across servers 
+    => If load increases, it creates new server from server pool
+    => User is able to access public IP of load balancer 
+    => Server have private IP, only access within same network of servers accessible by load balancer, not visible to public 
+

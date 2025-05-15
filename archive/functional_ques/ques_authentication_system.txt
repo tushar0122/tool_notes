@@ -1,0 +1,22 @@
+Automatically Sign In without entering credentials  
+    => This is typically achieved using authentication tokens, cookies, and session management. 
+
+Remember Me 
+    => When you check "Remember Me" during login, the system generates a long-lived authentication token.
+    => This token is stored in a cookie or local storage in the browser.
+    => When you revisit the site, the system detects this token and automatically logs you in.
+
+Session cookies 
+    => When you log in, the server creates a session and stores a session ID in a cookie.
+    => As long as the cookie is valid, your browser sends it with every request, keeping you logged in.
+    => If the session expires (e.g., after a few hours or days), you need to log in again.
+
+JWT 
+    => Some applications use JWT-based authentication.
+    => After login, a JWT token is issued and stored in local storage or session storage.
+    => This token is sent with each request to authenticate the user without needing credentials again.
+
+OAuth & Single Sign On (SSO)
+    => Websites like LeetCode may allow login via Google, GitHub, or Facebook.
+    => They use OAuth to authenticate you and store a refresh token that can get new access tokens.
+    => This allows automatic sign-in without re-entering credentials.

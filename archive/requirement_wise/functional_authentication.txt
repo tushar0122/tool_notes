@@ -1,0 +1,11 @@
+Authentication 
+    => Password vs token
+    => App Service vs Gateway Service 
+
+Password 
+    => It is less secure
+
+App Service 
+    => If there are multiple service, Need to add in each service, code logic of token generation and all 
+    => Duplicate code and all 
+    => So better a Separate Service, Gateway Service

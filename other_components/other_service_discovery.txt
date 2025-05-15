@@ -1,0 +1,5 @@
+Service discovery
+    => The primary role of service discovery is to recommend the best chat server for a client based
+    on the criteria like geographical location, server capacity, etc. Apache Zookeeper [7] is a
+    popular open-source solution for service discovery. It registers all the available chat servers
+    and picks the best chat server for a client based on predefined criteria.

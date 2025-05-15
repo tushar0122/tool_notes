@@ -1,0 +1,69 @@
+Disaster Recovery (DR) refers to the process of restoring IT systems, data, and operations after a failure caused by natural disasters, cyberattacks, hardware failures, or human errors.
+
+1️⃣ Key Objectives of Disaster Recovery
+✅ Minimize Downtime – Ensure business continuity with minimal service interruption.
+✅ Data Protection – Prevent data loss through backups and replication.
+✅ Fast Recovery – Restore systems quickly and efficiently.
+✅ Resilience – Prepare for worst-case scenarios with well-tested plans.
+
+2️⃣ Disaster Recovery Metrics
+To measure recovery effectiveness, organizations use the following key metrics:
+
+🔹 Recovery Time Objective (RTO)
+Definition: Maximum acceptable downtime after a disaster.
+Example: If RTO = 1 hour, the system must be back up within 1 hour.
+🔹 Recovery Point Objective (RPO)
+Definition: Maximum acceptable data loss in time.
+Example: If RPO = 5 minutes, data backups should occur at least every 5 minutes.
+🔹 Mean Time to Recover (MTTR)
+Definition: Average time to restore a system after failure.
+🔹 Mean Time Between Failures (MTBF)
+Definition: Expected time between two consecutive failures.
+3️⃣ Disaster Recovery Strategies
+Different DR strategies cater to different business needs and budgets.
+
+🔥 A. Backup & Restore
+How it Works: Periodic backups are stored in a secure location.
+Pros: Low cost, simple implementation.
+Cons: Slow recovery time, risk of data loss.
+Use Case: Small businesses, non-critical data.
+🔁 B. Pilot Light DR
+How it Works: A minimal version of the system is always running, which can be quickly scaled up.
+Pros: Faster than full backup restore, cost-efficient.
+Cons: Requires setup and maintenance.
+Use Case: Applications needing fast but cost-effective recovery.
+📦 C. Warm Standby
+How it Works: A scaled-down version of the production environment runs in a secondary location.
+Pros: Faster recovery than cold backup.
+Cons: More expensive than backup solutions.
+Use Case: Business-critical applications requiring fast recovery.
+🚀 D. Hot Standby (Active-Active)
+How it Works: A fully operational secondary system runs parallel to the primary system.
+Pros: Near-instant failover, minimal downtime.
+Cons: High cost, complex setup.
+Use Case: Mission-critical applications like banking, stock trading, healthcare.
+🌎 E. Multi-Region DR
+How it Works: Applications and databases are deployed across multiple geographic locations.
+Pros: Resilient to large-scale disasters, best for global businesses.
+Cons: High complexity and cost.
+Use Case: Large enterprises with a global presence.
+4️⃣ Disaster Recovery Implementation in Cloud
+Cloud providers offer built-in DR solutions.
+
+🟢 AWS Disaster Recovery
+AWS Backup – Automates data backup.
+Amazon S3 Versioning – Protects against accidental deletions.
+AWS Disaster Recovery (AWS DRS) – Provides cross-region failover.
+Route 53 Failover Routing – Automatically redirects traffic to a secondary location.
+🔵 Azure Disaster Recovery
+Azure Backup – Protects data from accidental loss.
+Azure Site Recovery (ASR) – Replicates workloads to a different Azure region.
+🔴 Google Cloud Disaster Recovery
+Cloud Storage Snapshots – Provides incremental backups.
+Cross-Region Replication – Ensures high availability across regions.
+5️⃣ Best Practices for Disaster Recovery
+✅ Regular Backups – Automate data backups and store them in multiple locations.
+✅ Redundancy – Implement multi-region or hybrid failover systems.
+✅ DR Testing & Drills – Regularly test DR plans to ensure effectiveness.
+✅ Monitoring & Alerts – Use tools like Prometheus, ELK, or Datadog to detect failures early.
+✅ Security & Compliance – Protect backups with encryption and access controls.

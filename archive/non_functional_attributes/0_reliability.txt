@@ -1,0 +1,6 @@
+Reliability
+    => To have reliable we need high performance and scalable system
+
+Reliable increases with 
+    => High Peformance 
+    => Scalability

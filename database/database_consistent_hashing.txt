@@ -1,0 +1,6 @@
+Advantages 
+    => Automatic scaling
+        => servers could be added and removed automatically depending on the load
+    => Heterogeneity
+        => the number of virtual nodes for a server is proportional to the server capacity.
+        For example, servers with higher capacity are assigned with more virtual nodes.

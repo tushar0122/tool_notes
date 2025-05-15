@@ -1,0 +1,2 @@
+Caching 
+    => By caching frequently accessed data, you reduce the need for repetitive database queries or expensive computations, which significantly improves the performance of your application.

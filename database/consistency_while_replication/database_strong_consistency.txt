@@ -1,0 +1,6 @@
+Strong Consistency
+
+1. Use a distributed database that supports strong consistency natively
+
+2. Raft’s ReadIndex mechanism 
+    => Checks with leader node for if latest index matches

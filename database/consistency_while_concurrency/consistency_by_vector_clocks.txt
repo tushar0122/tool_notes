@@ -1,0 +1,11 @@
+Vector clocks 
+    => Maintaining versioning across nodes 
+    => If some version is higher
+    A, B, C 
+    => If all less or equal no conflict
+
+Conflict Resolution
+    => 1. Return All Conflicting Versions
+    => 2. Last Write Wins (LWW)
+        => data loss 
+    => 3. Custom merge logic

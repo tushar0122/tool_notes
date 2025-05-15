@@ -1,0 +1,5 @@
+Timeout
+    => Ensure consumers acknowledge messages within the required time (or they’ll be redelivered).
+    => Set up alerts for unacknowledged messages increasing.
+
+

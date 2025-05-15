@@ -1,0 +1,136 @@
+Monitoring Tools
+    => Monitoring tools help track system performance, infrastructure health, application behavior, and security threats. Below is a categorized list of popular monitoring tools.
+
+1️. Infrastructure & Server Monitoring
+    => These tools track CPU, memory, disk usage, network traffic, and system health.
+    => Prometheus
+        => Open-source, time-series database.
+        => Uses a pull-based model to scrape metrics.
+        => Works well with Kubernetes and Grafana.
+        => Use Case: Server and containerized application monitoring.
+    => Nagios
+        => Enterprise-grade infrastructure monitoring.
+        => Detects failures, sends alerts, and provides dashboards.
+        => Supports plugins for extensibility.
+        => Use Case: Monitoring servers, network devices, and applications.
+    => Zabbix
+        => Agent-based and agentless monitoring.
+        => Supports real-time alerting and dashboard visualization.
+        => Use Case: Monitoring large-scale enterprise environments.
+    => Datadog
+        => Cloud-based monitoring with built-in machine learning.
+        => Supports infrastructure, application, and log monitoring.
+        => Use Case: Multi-cloud monitoring and DevOps integration.
+2. Application Performance Monitoring (APM)
+    => These tools help developers track application performance, request latency, and error rates.
+    => New Relic
+        => Real-time application monitoring and performance analytics.
+        => Distributed tracing for microservices.
+        => Use Case: Web and mobile application performance monitoring.
+    => AppDynamics
+        => Provides deep application visibility.
+        => Detects bottlenecks and performance issues.
+        => Use Case: Monitoring business-critical applications.
+    => Dynatrace
+        => AI-driven observability.
+        => Automatic root cause analysis.
+        => Use Case: Large-scale enterprise monitoring.
+    => Elastic APM
+        => Part of the ELK Stack.
+        => Collects application traces, errors, and latency metrics.
+        => Use Case: Open-source APM for full-stack monitoring.
+3. Cloud Monitoring
+    => These tools provide monitoring solutions for cloud-based applications and infrastructure. 
+    => AWS CloudWatch
+        => Native AWS monitoring tool.
+        => Collects logs, metrics, and events from AWS services.
+        => Use Case: Monitoring AWS infrastructure.
+    => Google Cloud Operations Suite (Stackdriver)
+        => Log monitoring, tracing, and debugging.
+        => Works well with Kubernetes and Google Cloud.
+        => Use Case: Cloud-native application monitoring.
+    => Azure Monitor
+        => Integrated with Azure services.
+        => Supports log analytics and alerting.
+        => Use Case: Monitoring virtual machines, databases, and cloud apps.
+4️. Container & Kubernetes Monitoring
+    => These tools are designed for containerized environments like Docker and Kubernetes. 
+    => Grafana + Prometheus
+        => Most popular open-source monitoring stack for Kubernetes.
+        => Prometheus collects metrics, Grafana provides dashboards.
+        => Use Case: Kubernetes cluster monitoring.
+    => Kubernetes Dashboard
+        => Built-in Kubernetes UI for monitoring pods, nodes, and workloads.
+        => Use Case: Kubernetes cluster health monitoring.
+    => cAdvisor
+        => Collects and visualizes container resource usage.
+        => Lightweight and integrates with Prometheus.
+        => Use Case: Real-time monitoring of containerized applications.
+    => Sysdig
+        => Provides deep visibility into container runtime security.
+        => Detects vulnerabilities and compliance violations.
+        => Use Case: Kubernetes security and monitoring.
+5️. Log Monitoring & Analysis
+    => These tools collect and analyze logs to identify issues and security threats. 
+    => ELK Stack (Elasticsearch, Logstash, Kibana)
+        => Centralized log collection, search, and visualization.
+        => Use Case: Analyzing system logs, application errors, and security threats.
+    => Loki (by Grafana)
+        => Lightweight log aggregation tool optimized for Kubernetes.
+        => Use Case: Log monitoring for cloud-native applications.
+    => Splunk
+        => Enterprise-grade log analysis with AI-driven insights.
+        => Use Case: Security event monitoring and forensic analysis.
+6️. Network Monitoring
+     => These tools monitor bandwidth, latency, and network security.
+     => Wireshark
+        => Packet analyzer for network troubleshooting.
+        => Use Case: Network traffic analysis and debugging.
+    => SolarWinds Network Performance Monitor
+        => Real-time network device monitoring.
+        => Use Case: Enterprise network performance monitoring.
+    => PRTG Network Monitor
+        => Tracks network uptime, traffic, and devices.
+        => Use Case: SMB and enterprise network monitoring.
+7️. Security & Compliance Monitoring
+    => These tools help in intrusion detection, vulnerability scanning, and compliance reporting.
+    => Wazuh
+        => SIEM (Security Information and Event Management) tool.
+        => Detects security threats and compliance violations.
+        => Use Case: Enterprise security monitoring.
+    => OSSEC
+        => Host-based intrusion detection system (HIDS).
+        => Use Case: Server security monitoring.
+    => Snort
+        => Real-time network intrusion detection.
+        => Use Case: Detecting malicious network traffic.
+8️. Database Monitoring
+    => These tools help track database performance, query execution, and slow queries.
+    => Percona Monitoring and Management (PMM)
+        => Open-source tool for MySQL, PostgreSQL, and MongoDB.
+        => Use Case: Database performance optimization.
+    => pgBadger
+        => PostgreSQL log analyzer.
+        => Use Case: Identifying slow queries and database performance issues.
+    => MySQL Enterprise Monitor
+        => Tracks MySQL performance and security.
+        => Use Case: MySQL query monitoring.
+9️. Synthetic & Real-User Monitoring
+    => These tools simulate user activity to measure website and application performance.
+    => Pingdom
+        => Website uptime and performance monitoring.
+        => Use Case: Ensuring website availability.
+    => GTmetrix
+        => Website speed analysis.
+        => Use Case: Frontend performance optimization.
+    => Lighthouse (by Google)
+        => Web page performance audits.
+        => Use Case: Web application optimization.
+10. IoT & Edge Monitoring
+    => These tools help monitor IoT devices, smart sensors, and edge computing.
+    => ThingsBoard
+        => Open-source IoT monitoring platform.
+        => Use Case: Monitoring smart devices and IoT systems.
+    => AWS IoT Device Defender
+        => Monitors and secures IoT devices.
+        => Use Case: IoT security monitoring.

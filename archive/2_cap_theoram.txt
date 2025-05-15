@@ -1,0 +1,54 @@
+Desirable property of distributed system with replicated data 
+
+CAP 
+C - Consistency 
+A - Availability 
+P - Partition Tolerance 
+
+Distributed System
+    => Multiple nodes having data distributed
+
+Can't have all three 
+
+CA 
+    => 
+
+CP 
+    => 
+
+AP 
+    => 
+
+Consistency
+    => Node B - a=4 => a=5 
+    => Node B -> Node C 
+    => Node C - a=4 => a=5
+    => After successful write in any node, it should read same data from any node 
+
+Availability
+    => Node B, Node C atleast respond
+    => All node should respond
+    => Success/Failure
+
+Partition Tolerance
+    => Node B Node C communication break 
+    => Node A can still query, still A can query and getting response 
+
+Why Not All three 
+    => When Partition Tolerance means can't communication and then Consistency can't be possible itself clear 
+        => Then AP is possible if we remove C 
+    => Consistency
+        => CP 
+            => if Partition Tolerance down the inconsistent node,  Node C is done     
+            => One node is down, so no Availability
+        => CA 
+            => Consistency will be done, if no Partition Tolerance
+            => Write not allowed in case of Partition
+
+P 
+    => is very much required 
+    => We can't stop system for not to write in case of Partition
+
+C or A 
+    => Choose one 
+    => CP or AP 

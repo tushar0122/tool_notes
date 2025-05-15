@@ -1,0 +1,11 @@
+Red Flags 
+    => OverEngineering 
+    
+4 step process 
+    => Design scope
+        => Ask right questions
+            => Specific Features 
+            => How many users 
+        => Make proper assumptions 
+        => Do not answer instantly think 
+        => Gather information

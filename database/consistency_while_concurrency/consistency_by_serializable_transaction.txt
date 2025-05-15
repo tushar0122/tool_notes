@@ -1,0 +1,27 @@
+Two Phase Locking
+    => Read 
+        => Multiple read can be done
+        => Write is blocked 
+    => Write 
+        => All read and write is blocked
+
+Serializable Snapshot Isolation 
+    => Pessemisstic Locking
+        => Lock when writing row level 
+
+Serializable using optimistic concurrency
+    => Optimistic Locking
+        => Using versioning
+        => Check for conflict and abort
+        => Reject if conflict occurs
+        => No locking
+
+Usecase 
+    => Good for read heavy system
+
+Pros 
+    => No locking
+    => High latency 
+
+Cons 
+    => Not suitable for high conflicting scenarios

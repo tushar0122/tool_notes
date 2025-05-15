@@ -1,0 +1,26 @@
+Layered Architecture
+
+What is the layered architectural pattern?
+    => The Layered Architecture Pattern is characterized by the hierarchical organization of the software components into distinct layers, each serving a specific role and potentially necessitating communication with adjacent layers. It's also known as the N-Tier Architecture or the Multi-Tier Architecture.
+
+Key Components
+    => Layers: The logical groupings of software elements that collaborate to perform specific tasks or operations. There can be any level of separation, with most applications distinguishing between three primary layers: Presentation, Business Logic, and Data.
+
+    => Inter-Layer Communication: Layers communicate with one another in a strictly defined order. Typically, lower layers serve as a foundation and are only aware of themselves and those directly above (direct dependency), while higher layers are cognizant of the layers beneath them, often using defined interfaces (dependencies could be direct or transitive).
+
+Advantages  
+    => Modularity: By compartmentalizing functionalities, the architecture enhances manageability and promotes code reusability.
+    => Isolation of Concerns: Each layer focuses on a specific aspect of the application, aiding in code simplicity and maintainability.
+    => Flexibility in Development and Updating: Since layers are relatively independent, teams can work on different layers concurrently, and modifications are contained within specific areas, reducing the probability of ripple effects.
+    => Consistently Defined Structure: The anticipated interactions between the various layers are consistently outlined, offering a robust blueprint for development and maintenance processes.    
+    => Scalability: The architecture can adapt to scaling demands. For instance, if the business layer is strained, more resources can be allocated to it without necessitating changes in the presentation or data layers.
+
+Common Use Cases
+    => Web Applications: They frequently adopt a 3-Tier architecture, dividing responsibilities across the client-side interface (presentation), server-side processing (business logic), and database management systems (data).
+    => Enterprise Solutions: Complex business operations can often benefit from an architecture that rigorously separates UI, logic, and data.
+    =. Systems with Numerous Users: Scalability is essential for products and services that have many users. A layered architecture helps manage this by compartmentalizing components.
+
+Drawbacks
+    => Potential Overhead: The need for data and control flow to traverse layers might lead to performance implications.
+    => Rigidity in Change Management: Modifying one layer might necessitate adjustments in other dependent layers. This domino effect can make the system less flexible.
+    => Complexity with Many Layers: While the architecture can include numerous layers, this can lead to increased complexity, making the system challenging to comprehend and maintain.

@@ -1,0 +1,13 @@
+Load Balancer 
+
+Global Load Balancer 
+    => A Global Load Balancer is a type of load balancer that operates at a global scale, typically managing traffic across multiple data centers or cloud regions. It’s designed to route user requests based on geographical location, availability, and latency, providing a highly available, scalable, and resilient system for applications distributed across the world.
+
+Level 7 Load Balancer 
+    => A Layer 7 Load Balancer (L7 LB) operates at the Application Layer (Layer 7) of the OSI model, allowing it to route traffic based on HTTP headers, URLs, cookies, and more. 
+    => Directs traffic based on URL paths, hostnames, or headers.
+    => Can route based on URLs (e.g., /auth, /payments)
+
+Level 4 Load Balancer 
+    => A Layer 4 Load Balancer (L4 LB) operates at the Transport Layer (Layer 4) of the OSI model and is designed to make routing decisions based purely on IP addresses and ports,
+    =>  if you're dealing with simple TCP/UDP protocols or need high-performance, low-latency load balancing without the overhead of inspecting application-level data (such as HTTP headers).

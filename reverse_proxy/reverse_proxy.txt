@@ -1,0 +1,11 @@
+What?
+    =>  Acts on behalf of the server
+    => Sits in front of backend servers.
+    => Routes client requests to appropriate backend.
+    => Hides backend details from the client.
+
+Use 
+    => SSL termination
+    => Load distribution
+    => Caching, authentication
+    => URL routing

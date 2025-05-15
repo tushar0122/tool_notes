@@ -1,0 +1,3 @@
+Database Reliability 
+    => Database Replication (Master/Slave Architecture)
+        => Across different locations

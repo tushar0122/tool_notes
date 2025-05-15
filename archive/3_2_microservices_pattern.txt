@@ -1,0 +1,29 @@
+Microservice
+    => How much size 
+    => How many service 
+
+Phase of Microservice 
+    => Decomposition 
+    => Database 
+    => Communication 
+    => Integration 
+
+Decomposition
+    => Decompose by Business Functionality 
+    => Decompose by Subdomain
+
+Database
+    => database for each 
+    => common database
+
+Communication
+    => Communication between service 
+        => Api 
+        => Events 
+    
+Integration
+    => Integrate with UI/Third Party Service
+        => API Gateways
+
+Observability 
+    => 

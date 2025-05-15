@@ -1,0 +1,24 @@
+Anti Entropy 
+    => Anti-entropy is about healing inconsistencies between nodes by comparing and reconciling data periodically — like syncing up your phone and cloud to ensure both have the same photos.
+
+There are several strategies for anti-entropy:
+
+Merkle Trees (Hash Trees)
+Nodes compare compact tree representations of their data.
+Only the parts that differ are synced.
+
+Used in: Amazon DynamoDB, Cassandra
+
+Gossip Protocols
+Nodes randomly select peers and exchange state information.
+Over time, all nodes converge to a consistent state.
+
+Used in: Riak, Scuttlebutt
+
+Read Repair
+During reads, if inconsistencies are found, the node repairs data by writing the correct version.
+On-the-fly consistency fix.
+
+Hinted Handoff
+Temporarily stores updates for unavailable nodes and hands them off when they recover.
+

@@ -1,0 +1,28 @@
+Performance
+    
+Performance increases with 
+    => Scalability
+
+Performance KPI 
+    => ThroughtPut
+    => Latency
+
+What we need actually
+    => Fast read 
+    => Fast processing 
+    => Fast write 
+
+How can we do 
+    => parallel processing
+        => multithreading 
+    => using main memory for fast processing
+        => caching 
+    => distributing load 
+        => load balancing 
+        => horizontal scaling 
+    => Increasing cpu and memory resources based on usages
+        => Vertical Scaling
+
+What are the key considerations when designing a low-latency system?
+How do you optimize a system for high throughput?
+How do you handle hotspots in a distributed database?

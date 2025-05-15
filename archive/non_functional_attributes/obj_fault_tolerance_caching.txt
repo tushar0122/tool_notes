@@ -1,0 +1,2 @@
+Distributed Caching 
+    => With distributed caching, if one cache node goes down, data is still available from other nodes, ensuring high availability.

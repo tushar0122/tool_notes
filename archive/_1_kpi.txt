@@ -1,0 +1,11 @@
+Key Performance Indicators
+    => Each quality attribute can measure its adherence, typically using quantitative metrics or key performance indicators (KPIs):
+
+Performance: 
+    => Utilization metrics, response times, and throughput.
+Reliability: 
+    => Measured often in uptime percentages.
+Availability: 
+    => Can be measured using uptime metrics, such as "five nines" (99.999%).
+Security: 
+    => Can be evaluated using penetration testing results, compliance indicators, security frameworks adhered to, and specific security protocols' success rates

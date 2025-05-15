@@ -1,0 +1,15 @@
+Server Performance 
+    => Reducing load 
+        => Horizontal Scaling (with load balancer, with autoscaling)
+    => Reducing Computation 
+        => Caching
+        => CDN 
+    => Reducing Size 
+        => Compression
+
+Database Performance
+    => Reducing Load 
+        => Database Replication (Master/Slave Architecture)
+    => Reducing Computation
+        => Horizontal Scaling
+        => Vertical Scaling

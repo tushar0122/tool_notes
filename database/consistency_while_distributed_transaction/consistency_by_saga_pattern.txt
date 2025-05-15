@@ -1,0 +1,10 @@
+Saga Pattern 
+    => Each Microservice has it's own database 
+    => One transaction need to write in multiple database 
+    => If fails need to rollback in all
+
+Two ways 
+    => Orchestrator 
+        => Send events to database if one is sucessfully 
+        => If failure rollback all
+    => each Microservice by self send events 

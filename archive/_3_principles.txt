@@ -1,0 +1,25 @@
+Separation of Concern 
+    => Separation of Concerns (SoC) is a fundamental design principle that advocates for the division of a system into distinct sections—each addressing a particular set of functionalities.
+
+Elements of SoC
+    => Single Responsibility: Modules, classes, and methods should only have one reason to change. For example, a User class should handle user data, but not also display user data.
+
+    => Low Coupling: Components should minimize their interdependence.
+
+    => High Cohesion: Elements within a component should pertain to the same functionality.
+
+Law of Diameter 
+    => The principle of least knowledge (LoD), also known as the law of Demeter, emphasizes reducing the dependencies between modules and classes to make systems more modular, easier to maintain, and less prone to errors.
+
+    => Core Tenets
+=> The Law of Demeter distills the following key principles:
+
+=> Locality of Knowledge: Each module has detailed knowledge about its immediate collaborators.
+=> Black Box Design: A module's internal state is considered its private information, and interactions are based on public interfaces.
+=> Verbal Expressions
+=> The Law of Demeter has been formulated using several verbal expressions, offering different perspectives on its core tenets:
+"Don't talk to strangers"
+This phrase is an analogue for the principle that objects or methods should have limited access to other entities.
+
+"Only talk to your immediate friends"
+This expression emphasizes that a module should interact with its closely related modules and avoid extensive collaboration, mitigating the risk of creating tightly coupled systems.

@@ -1,0 +1,16 @@
+Connection Failure 
+    => Retry & Queuing 
+    => Dead letter Queue 
+
+Retry 
+    => Retry after backoff time 
+
+Queuing 
+    => Store in local queue and retry 
+
+Dead letter queue 
+    => After message repeatedly failed, store in dead letter queue
+
+Server Failure 
+    => Failure Detection
+        => GOSSIP Protocol

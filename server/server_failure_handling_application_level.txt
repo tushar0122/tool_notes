@@ -1,0 +1,42 @@
+Auto-scaling Groups / Instance Groups
+Cloud platforms (AWS ASG, GCP MIG) replace failed VMs automatically.
+Scales up/down based on traffic and health.
+
+Kubernetes Self-Healing
+Liveness/Readiness Probes: Restart failed containers.
+ReplicaSets: Ensure a minimum number of pods are always running.
+Node auto-replacement: Managed Kubernetes can replace failed nodes.
+
+Circuit Breaker Pattern 
+    => A circuit breaker wraps a call to a remote service or resource (like an API or database). If the call fails too many times, the circuit breaker "trips" and stops further attempts for a while.
+
+Working
+Closed: Everything works fine. Requests go through.
+Open: Too many failures. Stop sending requests. Fail fast.
+Half-Open: After a timeout, allow a few test requests.
+If successful → go back to Closed
+If failed → stay Open
+
+Popular Libraries/Tools:
+Resilience4j (Java)
+Hystrix (Netflix – now in maintenance mode)
+Spring Cloud Circuit Breaker
+Istio / ASM (service mesh level breakers)
+
+Retry Mechanism with Exponential Backoff
+    => Exponential backoff means the delay between retries increases exponentially — typically doubling after each attempt — and often includes jitter to avoid the "thundering herd problem".
+    => Jitter is used in case of synchronized retries 
+        => When multiple clients, threads, or services fail or are blocked (e.g., can’t access a resource), they all retry at the same time or on a fixed schedule.
+        => Jitter introduces randomness 
+
+Use Cases
+Calling external APIs (especially in cloud services)
+Messaging systems like Kafka or RabbitMQ
+Database retries on connection timeouts
+Circuit breakers and resilient systems (using Resilience4j, Hystrix, etc.)
+
+Best Practices
+Cap retries — avoid infinite retry loops.
+Use jitter — randomize delay to prevent overload.
+Track attempts — log or monitor retries for observability.
+Use libraries — like Resilience4j, Spring Retry, or [Guava Retryer].

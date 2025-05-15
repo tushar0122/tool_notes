@@ -1,0 +1,8 @@
+What 
+    => Sits between the client and the internet.
+    => Hides client identity or controls what it can access.
+
+Use 
+    => Censorship/firewall bypass
+    => Anonymous browsing (e.g., using Tor)
+    => Internet access filtering in companies

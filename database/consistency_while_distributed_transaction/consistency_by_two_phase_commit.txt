@@ -1,0 +1,23 @@
+Used for:
+📦 Distributed Transactions (ensuring atomicity across multiple databases or services)
+
+Goal:
+To make sure all participating systems in a transaction either commit or rollback together — no partial commits.
+
+Phases:
+
+Prepare Phase:
+The coordinator sends a prepare message to all participants.
+Each participant responds with ready to commit or abort.
+
+Commit Phase:
+If all say ready, the coordinator sends commit.
+If any say abort, it sends rollback to all.
+
+Pros:
+Ensures atomicity across systems.
+
+Cons:
+Blocking: If coordinator crashes, participants may wait indefinitely.
+Not fault-tolerant unless enhanced (e.g., 3PC, Paxos, etc.).
+

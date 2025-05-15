@@ -1,0 +1,20 @@
+Images
+    => File vs Blob (Binary large object)
+
+=> Blob
+    => Mutability
+    => Transaction Gurantees (ACID)
+        => Not needed for images 
+    => Indexes (Search Capabilities)
+        => Not done on blob column 
+    => Access Control
+        => Can be done same in file system
+
+=> File System 
+    => Cheaper 
+    => Faster 
+        => Vertical Partitioning
+    => CDN over it 
+    => Distributed File System
+        => profile id 
+        => image id 

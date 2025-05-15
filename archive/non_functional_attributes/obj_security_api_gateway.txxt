@@ -1,0 +1,29 @@
+API Gateway 
+    => An API Gateway is a server that acts as an entry point for client requests and manages API calls between clients and backend services. It handles tasks like request routing, authentication, rate limiting, monitoring, and response transformation.
+
+Key Features of an API Gateway
+    => Request Routing – Directs API requests to the appropriate backend service.
+    => Authentication & Authorization – Ensures only authorized users can access the APIs.
+    => Rate Limiting & Throttling – Prevents abuse by limiting the number of requests per second/minute.
+    => Load Balancing – Distributes incoming traffic across multiple backend services to improve performance.
+    => Response Caching – Stores responses to reduce load on backend services.
+    => Security – Protects APIs from threats like SQL injection, DDoS attacks, and unauthorized access.
+    => Monitoring & Logging – Tracks API performance and errors for debugging and analytics
+
+Popular API Gateways
+    => AWS API Gateway
+    => Kong API Gateway
+    => NGINX API Gateway
+    => Apigee (by Google)
+    => Zuul (by Netflix)
+    => Traefik
+
+When to Use an API Gateway?
+    => When you have multiple microservices that need a single entry point.
+    => To enforce security, rate limiting, and authentication at the gateway level.
+    => To reduce the number of direct client-to-service calls and improve efficiency.
+
+Distributed API Gateway
+    => Region based 
+    => Each region one api gateway 
+

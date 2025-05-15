@@ -1,0 +1,7 @@
+Replication
+    => Having redundant copies of database so that application does not fail in the event of a crash, reduce load on each database serving request 
+
+Types of Replication.
+    => Single Leader Replication
+    => Multi Leader Replication
+    => Leaderless 

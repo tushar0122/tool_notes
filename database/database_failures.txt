@@ -1,0 +1,11 @@
+=> Handling Failures 
+    => Failure detection
+        => Gossip Protocol
+    => Handling temporary failures
+        => Sloppy Quoram
+            => the system chooses the first W healthy servers for writes and first R healthy servers for reads on the hash ring. Offline servers are ignored
+        => Hinted Handoff
+            => If a server is unavailable due to network or server failures, another server will process requests temporarily. When the down server is up, changes will be pushed back to achieve data consistency
+    => Handling Permanent Failure
+        => Anti Entropy Protocol
+            => Merkle Tree

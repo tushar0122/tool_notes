@@ -1,0 +1,7 @@
+Load Balancer 
+    => A special type of reverse proxy which serves as load distribution
+
+Types 
+Layer 4 (TCP/UDP) — e.g., HAProxy, AWS NLB
+Layer 7 (HTTP/HTTPS) — e.g., AWS ALB, NGINX, GCP Load Balancer
+

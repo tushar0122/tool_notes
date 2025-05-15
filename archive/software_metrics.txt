@@ -1,0 +1,11 @@
+Availability
+    => Remains up 
+
+Performance
+    => Low latency
+
+Scalability
+    => Handle large number of users
+
+Security 
+    => Encrypted

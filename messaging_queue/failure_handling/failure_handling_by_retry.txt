@@ -1,0 +1,9 @@
+Retries and Error Logs
+Monitor logs for errors like:
+Timeout
+Unauthorized
+Connection refused
+
+Track retry attempts. Too many retries = red flag.
+
+Idempotency: Make retries safe by designing operations that can be repeated without unintended effects.

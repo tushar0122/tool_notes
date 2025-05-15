@@ -1,0 +1,12 @@
+Rate Limiting:
+
+Purpose: 
+    => It restricts the number of requests or actions a user or system can perform within a certain time window.
+
+Use case: 
+    => This is commonly used to prevent abuse or overload of services by ensuring that a user can only make a specific number of requests in a set period (e.g., 100 requests per minute).
+
+Behavior: 
+    => Once the rate limit is exceeded, the system will typically reject or delay further requests until the time window resets.
+    x
+Example: An API that allows a maximum of 100 requests per minute per user

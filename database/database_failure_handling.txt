@@ -1,0 +1,37 @@
+Replicating data across multiple nodes ensures data is available even if some nodes fail.
+
+Types:
+Master-slave replication: Writes go to the master; replicas serve reads.
+Multi-master replication: Multiple nodes can handle reads/writes.
+
+Failure Handling:
+If the master fails, a slave can be promoted (automatic/manual failover).
+Read from replicas if a node becomes unavailable.
+
+Snapshot & Backup Restore
+For disaster recovery.
+Used in combination with RTO/RPO strategie
+
+Write-Ahead Logging (WAL)
+Ensures durability—logs all writes before applying to the database.
+Helps in crash recovery.
+Common in PostgreSQL, MySQL, etc.
+
+⚙️ How It Works
+Transaction begins
+All changes made by the transaction are written to the WAL.
+The WAL is flushed to disk (ensuring persistence).
+Only after this, the changes are applied to the actual database.
+If the transaction commits:
+A "commit" record is also written to the WAL.
+In case of a crash:
+The database can replay the WAL to restore to a consistent state.
+
+Benefits
+Durability (from ACID properties): Ensures no data is lost if a crash occurs after writing to the log.
+Crash Recovery: WAL can be replayed to reconstruct the state.
+Performance: Sequential writes to WAL are faster than random writes to the main DB.
+
+❌ Drawbacks
+Increased I/O: Every write operation involves two steps: log + DB write.
+Log Management: Logs must be cleaned or truncated after checkpoints.

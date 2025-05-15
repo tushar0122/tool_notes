@@ -1,0 +1,106 @@
+Logging Tools 
+    => Logging tools are essential for tracking application behavior, debugging issues, and ensuring system reliability. These tools help developers and system administrators capture, store, and analyze logs efficiently. Below is a categorized list of popular logging tools.
+
+1. Centralized Log Management Tools
+    => These tools collect logs from multiple sources, centralize them, and provide search, filtering, and visualization capabilities.
+
+2. ELK Stack (Elasticsearch, Logstash, Kibana)
+    => Elasticsearch: Stores and indexes logs for fast search.
+    => Logstash: Collects, processes, and forwards logs.
+    => Kibana: Visualizes log data with dashboards.
+    => Use Case: Scalable log analysis for web applications, microservices, and infrastructure monitoring.
+    =>  Graylog
+        => Open-source centralized log management.
+        => Supports real-time searching, alerting, and dashboards.
+        => Use Case: Security logs, operational logs, and system monitoring.
+    => Splunk
+        => Enterprise-grade log management and analysis tool.
+        => AI-powered analytics and machine learning insights.
+        => Use Case: Large-scale data processing, SIEM (Security Information and Event Management).
+    => Fluentd
+
+2. Cloud-Based Logging Services
+    => These services are managed logging solutions, ideal for cloud-native applications.
+    =>  AWS CloudWatch Logs
+        => Native AWS logging service.
+        => Collects logs from AWS services like Lambda, EC2, and ECS.
+        => Use Case: Monitoring AWS-based applications.
+    => Google Cloud Logging
+        => Part of Google Cloud Operations Suite.
+        => Works with Kubernetes, GKE, and other Google Cloud services.
+        => Use Case: Logging for cloud-native applications on Google Cloud.
+    => Azure Monitor & Log Analytics
+        => Microsoft Azure’s built-in monitoring and logging solution.
+        => Provides log querying using Kusto Query Language (KQL).
+        => Use Case: Logging and monitoring for Azure services and virtual machines.
+3. Log Aggregators and Forwarders
+    => These tools collect logs from various sources and send them to a central repository.
+    => Logstash
+        => Part of the ELK stack.
+        => Supports filtering, transformation, and enrichment of logs.
+        => Use Case: Processing logs before storing them in Elasticsearch.
+    => Fluent Bit
+        => Lightweight alternative to Fluentd.
+        => Optimized for Kubernetes and container environments.
+        => Use Case: Resource-efficient log collection for microservices.
+    => Rsyslog
+        => High-performance log processing for Linux.
+        => Supports structured logging and message queuing.
+        => Use Case: Traditional Linux server logging.
+    => Syslog-ng
+        => Similar to Rsyslog but with more flexibility.
+        => Supports filtering, parsing, and forwarding logs.
+        => Use Case: Enterprise-grade syslog collection.
+4. Application-Specific Logging Tools
+    => These tools help capture and analyze logs specific to applications or services. 
+    => Loki (by Grafana)
+        => Log aggregation tool optimized for Kubernetes and microservices.
+        => Works with Prometheus for unified monitoring and logging.
+        => Use Case: Efficient log storage and querying for cloud-native applications.
+    => Sentry
+        => Focuses on error tracking and application performance monitoring.
+        => Supports multiple languages: Python, JavaScript, Java, etc.
+        => Use Case: Debugging application crashes and performance bottlenecks.
+    => Serilog
+        => Structured logging for .NET applications.
+        => Allows logging to multiple destinations (files, databases, cloud services).
+        => Use Case: Application logging for .NET developers.
+    => Winston
+        => Popular logging library for Node.js applications.
+        => Supports multiple transports (console, files, databases).
+        => Use Case: Logging in Express.js, NestJS, and other Node.js apps.
+5. Security & Compliance Logging
+    => These tools focus on security logs, compliance monitoring, and forensic analysis.
+    => Wazuh
+        => Open-source SIEM (Security Information and Event Management).
+        => Collects logs, detects anomalies, and integrates with ELK Stack.
+        => Use Case: Security monitoring for servers and applications.
+    => OSSEC
+        => Host-based intrusion detection system (HIDS).
+        => Monitors system logs, detects file integrity changes, and alerts administrators.
+        => Use Case: Security logging for Linux and Windows servers.
+    => Chronicle (Google Security)
+        => Security analytics and threat detection tool.
+        => Use Case: Enterprise-grade cybersecurity monitoring.
+6. Debugging & Development Logging
+    => These tools help developers track logs during development. 
+    => Loguru (Python)
+        => Simple yet powerful logging library for Python.
+        => Use Case: Python application debugging.
+    => Pino (Node.js)
+        => High-performance JSON logger for Node.js.
+        => Use Case: Logging for high-speed microservices.
+    => sDebug (Node.js)
+        => Minimalist debugging tool for Node.js applications.
+        => Use Case: Quick debugging in Express.js applications.
+7. Database & API Logging
+    => These tools help in monitoring database queries and API interactions.
+    => pgBadger (PostgreSQL)
+        => PostgreSQL log analyzer and performance profiler.
+        => Use Case: Analyzing slow queries in PostgreSQL.
+    => MySQL Slow Query Log
+        => Native MySQL logging feature for tracking slow queries.
+        => Use Case: Database query performance tuning.
+        => API Gateway Logs (AWS, Kong, Apigee)
+        => Helps in tracking API requests, response times, and errors.
+        => Use Case: API analytics and debugging.

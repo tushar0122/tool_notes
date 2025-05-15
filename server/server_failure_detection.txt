@@ -1,0 +1,75 @@
+Heart Beat Based Mechanism
+Simple Heartbeat
+    => Mechanism: Server sends heartbeat every T seconds.
+    => Detection: If heartbeat is not received within T + Δ, it's considered down.
+    => Use Case: Load balancers, simple health checks.
+
+Uses
+Kubernetes liveness/readiness probes, HAProxy, ZooKeeper 
+
+Advantage
+Simple and easy to implement.
+Works well in small-scale systems.
+
+Disadvantage 
+Not adaptive to network delays or temporary glitches.
+Fixed timeout can lead to false positives/negatives.
+
+Gossip protocol 
+    => Each node periodically selects a few random peers and shares its view of the world (including which nodes it sees as alive or failed).
+    => If a node is repeatedly reported as down by multiple peers, it is marked as failed.
+    => Decentralized and fault-tolerant.
+    
+Uses 
+    => Cassandra, ScyllaDB
+    => Consul, Serf
+    => Dynamo-style databases
+
+Pros:
+Decentralized and fault-tolerant.
+Scales well in large distributed systems.
+
+Cons:
+Slower convergence in large networks.
+Might delay detection of isolated failures.
+
+Accrual Failure Detectors 
+    => Instead of saying “server is alive/dead,” it outputs a suspicion level (ϕ) based on statistical analysis of heartbeat intervals.
+    => A higher ϕ score means a higher probability that the node has failed. A configurable threshold (e.g., ϕ > 8) is used to declare failure.
+    => It uses the history of heartbeat timings to calculate the likelihood that a node has failed.
+
+Pros:
+Adaptive to network latency.
+Reduces false positives in unstable networks.
+
+Cons:
+Slightly complex to implement and tune.
+Requires statistical modeling of heartbeat intervals.
+
+Used in:
+Akka Cluster
+Cassandra internals
+Amazon Dynamo
+
+System Processing Monitoring Tools 
+    Agents installed on servers monitor:
+    CPU, memory, disk usage
+    Process status
+    Log anomalies
+    System calls or traces
+    Failure detection logic:
+    Threshold violations (e.g., CPU > 95% for 5 mins) or service crashes trigger alerts.
+
+Pros:
+Deep visibility into system health.
+Can predict failures before they happen.
+
+Cons:
+Higher resource overhead.
+Requires agent installation and maintenance.
+
+Used in:
+Prometheus + Grafana
+Datadog, Dynatrace
+ELK Stack + Filebeat
+

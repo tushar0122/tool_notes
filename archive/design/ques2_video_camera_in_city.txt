@@ -1,0 +1,7 @@
+Database for storing Image thumbnails
+
+=> Cloud FileStore
+=> Redis 
+=> ElasticSearch
+=> Relational Database
+=> Ckoud Object Store

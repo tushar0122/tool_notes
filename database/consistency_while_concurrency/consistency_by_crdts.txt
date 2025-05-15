@@ -1,0 +1,8 @@
+CRDT's 
+    => CRDTs work by designing data structures and operations in such a way that all updates can be applied in any order, and replicas will still converge to the same state.
+
+This is possible by enforcing mathematical properties like:
+
+Commutativity: a + b = b + a (order doesn't matter)
+Associativity: (a + b) + c = a + (b + c) (grouping doesn't matter)
+Idempotency: applying the same update multiple times has no further effect.

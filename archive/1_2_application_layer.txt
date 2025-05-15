@@ -1,0 +1,53 @@
+Application Layer 
+    => Client-Server Protocol
+        => Http 
+        => Websocket
+        => Ftp
+        => Smtp 
+    => Peer to Peer Protocol
+        => Webrtc 
+
+Client Server Protocol
+    => Web Browser (Client)
+    => Web Server (Server)
+    => Client make a request and server gives a response 
+    => One way communication
+        => Client only initiates the same thing 
+        => Same in ftp, smtp
+
+Websocket Protocol
+    => It is bidirectional
+    => Client1 can talk to server 
+    => Server can talk to Client1
+    => Client2 can talk to server 
+    => Server can talk to Client2
+    => Client1 doesn't talk to Client2, so not peer to peer Protocol
+    => Used in messaging system
+
+HTTP 
+    => Connection oriented
+    => 1 Connection 
+    
+FTP 
+    => 2 Connection
+        => Control Connection
+        => Data Connection
+            => It is not encrypted, so not used
+
+SMTP 
+    => Sending mails 
+
+IMAP 
+    => accessing or reading mail 
+
+POP3 
+    => Not used today 
+    => delete mail after accessing it
+
+Peer to Peer 
+    => All Server, Client can talk to each other 
+
+Webrtc
+    => It is peer to peer Protocol
+    => It uses UDP Protocol
+    => It is used in live streaming

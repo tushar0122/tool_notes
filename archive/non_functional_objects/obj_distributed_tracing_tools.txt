@@ -1,0 +1,64 @@
+Distributed Tracing        
+    => Distributed tracing is a method to track requests across microservices to identify performance bottlenecks, latency issues, and failures in a distributed system.
+
+Why is Distributed Tracing Important?
+    => End-to-End Visibility 📊: Helps track a request’s journey across multiple services.
+    => Performance Optimization 🚀: Identifies slow services and bottlenecks.
+    => Root Cause Analysis 🔍: Helps debug errors by correlating logs and traces.
+    => Improves Observability 👀: Complements logging and monitoring for a complete view.
+    => 🛠 Distributed Tracing Architecture
+    => A distributed tracing system typically includes:
+    => Tracing Instrumentation: Captures request traces from applications.
+    => Trace Collection: Aggregates trace data in a backend system.
+    => Visualization & Analysis: Displays trace dependencies and latencies.
+1️. Open-Source Distributed Tracing Tools
+        => 🔹 OpenTelemetry (OTel)
+        => Industry-standard tracing framework.
+        => Supports traces, metrics, and logs.
+        => Integrates with Jaeger, Zipkin, Prometheus, and Grafana.
+        => Use Case: Modern microservices observability.
+        => 🔹 Jaeger
+        => Open-source, built by Uber.
+        => Distributed context propagation, sampling, and analysis.
+        => Use Case: Tracing microservices with OpenTelemetry.
+        => 🔹 Zipkin
+        => Originally built by Twitter.
+        => Lightweight tracing with low overhead.
+        => Use Case: Simple, fast trace collection.
+2️. Cloud-Based & Enterprise Tracing Tools
+        => 🔹 AWS X-Ray
+        => Amazon’s managed tracing service.
+        => Supports Lambda, ECS, EKS, and API Gateway.
+        => Use Case: Tracing AWS microservices.
+        => 🔹 Google Cloud Trace
+        => Fully managed distributed tracing.
+        => Works with GKE, Cloud Run, and App Engine.
+        => Use Case: Observability for Google Cloud apps.
+        => 🔹 Azure Application Insights
+        => Distributed tracing for Azure-based applications.
+        => Integrated with Azure Monitor and Log Analytics.
+        => Use Case: Full-stack monitoring for Azure apps.
+        => 🔹 Datadog APM
+        => Distributed tracing + application performance monitoring (APM).
+        => Supports Kubernetes, AWS, and on-prem apps.
+        => Use Case: Enterprise-grade observability.
+        => 🔹 New Relic Distributed Tracing
+        => Automatic instrumentation and AI-powered insights.
+        => Supports microservices, containers, and cloud apps.
+        => Use Case: Real-time application monitoring.
+        => 🔹 Dynatrace
+        => AI-powered tracing, logs, and monitoring.
+        => Uses PurePath technology for deep request tracking.
+        => Use Case: Cloud-native and large-scale observability.
+3️. Distributed Tracing in Kubernetes
+        => Kubernetes workloads generate thousands of requests per second. These tools help trace them efficiently:
+        => 
+        => ✅ Prometheus + Grafana + OpenTelemetry
+        => Collect traces, metrics, and logs for a unified observability stack.
+        => Use Case: Kubernetes performance monitoring.
+        => ✅ Istio Service Mesh + Jaeger
+        => Automatically traces requests across microservices.
+        => Use Case: Service-to-service tracing in Kubernetes.
+        => ✅ Envoy + Zipkin
+        => Envoy proxies automatically send traces to Zipkin.
+        => Use Case: Tracing API Gateway and ingress traffic.

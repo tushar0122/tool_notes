@@ -1,0 +1,3 @@
+Architectural Pattern
+    => A Software Architectural Pattern is a proven, structured solution to a recurring design problem. These patterns offer a blueprint for conceptualizing systems and addressing common challenges in software architecture. They provide a vocabulary for developers and ensure commonly-faced problems are solved in a consistent manner.
+

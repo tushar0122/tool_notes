@@ -1,0 +1,17 @@
+Quality Attributes
+    => System quality attributes, often referred to as non-functional requirements, complement functional requirements in shaping a system's architecture and design. They define characteristics centering around reliability, maintainability, and other performance aspects.
+
+    => Developers aim to ensure these attributes right from the conceptual stages, thus they shape the software's foundation and guide architectural decision-making throughout the development cycle.
+
+Importance of Quality Attributes
+    => Holistic User Experience
+        While functional requirements capture what the system should do, quality attributes capture how well it should do it. Together, these define a user's complete experience with the system.
+
+    => Design Focus
+        Quality attributes help guide the system design, ensuring that not only the main features but also the system's overall environment, security, and utility are optimized and secure.
+
+    => Balanced Decisions
+        Engineering decisions must often balance competing objectives. Quality attributes help communicate these objectives, making it easier for architects and developers to make informed decisions.
+
+    => Technical Compatibility
+        Different quality attributes can complement or contradict each other, and it's important to balance them to ensure a cohesive, efficient system.

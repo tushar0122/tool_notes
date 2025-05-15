@@ -1,0 +1,3 @@
+Edge Computing
+    => Edge computing refers to the practice of processing data closer to where it is generated, typically on the "edge" of the network, rather than relying on centralized cloud-based data centers. The goal is to reduce latency, increase speed, improve bandwidth efficiency, and provide real-time processing, especially for applications requiring quick responses or heavy data processing.
+

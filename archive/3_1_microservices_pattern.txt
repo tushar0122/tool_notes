@@ -1,0 +1,35 @@
+Microservices Pattern 
+
+Two Archiecture 
+    => Monolithic 
+    => Microservices
+    
+
+Monolithic Services 
+    => also called Legacy Services 
+    => Disadvantages 
+        => Overload IDE
+        => Scaling is very hard
+            => Debugging is hard
+            => Regression for whole 
+            => Tight Coupled Application
+                => Testing required for whole if one change
+                => Deployed whole Application
+            => Need to scale whole Application, if needed to scale only one functionality
+                => Costly 
+Microservices
+    => All Disadvantages of Monolithic is advantage of Microservices
+        => Managing is very easy 
+        => Scaling as per needed for specific functionality
+            => Pocket Friendly
+    => Disadvantages
+        => Their should be understanding for dividing in Microservices, If not divide properly 
+        => It should be loosely coupled, if not
+            => To process one request need to call many services and need changes in many services
+                => Latency increases 
+        => Debugging
+            => Which service has cause, in case of service is dependent on other services 
+        => Transaction Management 
+            => service dependent in other service, each service is calling database 
+                => one sucess and other fail 
+                    => need to rollback in where sucess

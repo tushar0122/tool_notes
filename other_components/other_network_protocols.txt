@@ -1,0 +1,13 @@
+HTTP 
+    => Connection is initiated by client only 
+    => Keep alive header decides how long connection is persistent
+    => Port 80 or 443 is used
+
+WebSocket
+    => It is bidirectional Protocol
+    => It creates persistent connection
+    => Port 80 or 443 is used
+    => It can be used even firewall is in place
+    
+Usecase 
+    => In chat systems

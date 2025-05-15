@@ -1,0 +1,21 @@
+Scalability
+
+Scalability KPI 
+    => ThroughtPut for large number of requests
+    => Latency for large number of requests
+
+What we need actually
+    => Fast read 
+    => Fast processing 
+    => Fast write 
+
+How can we do 
+    => Distributing load 
+        => load balancer  
+    => Scaling number of pods based on usage 
+        => Auto Horizontal Scaler 
+    => Scaling memory resources 
+        => Give flag for min max cpu memory resources 
+
+How would you design a system to handle millions of requests per second?
+How do you ensure your system is horizontally scalable?

@@ -1,0 +1,38 @@
+Throttling
+
+Purpose: 
+    => Throttling manages the rate at which requests or data are processed, but it doesn’t necessarily enforce strict limits on the total number of requests. Instead, it tries to smooth out bursts of traffic.
+
+Use case: 
+    => Throttling is used when you want to ensure that the system handles requests at a steady pace to prevent resource overload or service degradation, but without completely denying access after a threshold is hit.
+
+Behavior: 
+    => It typically slows down the rate at which requests are processed, e.g., by adding delays between requests to keep the load manageable.
+    => Example: A streaming service throttles the video quality to adjust to the user’s available bandwidth.
+
+Key Differences:
+    => Enforcement: Rate limiting enforces hard limits, while throttling often involves slowing down or queuing requests.
+    => Control: Rate limiting controls the maximum requests, whereas throttling adjusts how the system handles requests over time (e.g., slowing down during peak traffic).
+
+Here are some more examples of throttling in different contexts:
+    => API Rate Throttling:
+        => Example: An API that allows users to send requests, but if too many requests are made in a short period, it doesn’t reject the requests outright. Instead, it introduces delays (e.g., 2 seconds between requests) to slow down the rate of requests so the backend services don’t get overwhelmed.
+        => Use case: Ensures that users aren’t making too many requests too quickly and causes the system to handle bursts smoothly, preventing a sudden spike in load.
+    => Network Throttling:
+        => Example: Internet service providers (ISPs) may throttle the bandwidth of users who are consuming large amounts of data (e.g., during peak hours) to ensure fair distribution of bandwidth across all users.
+        => Use case: Prevents one user from monopolizing the available bandwidth, ensuring a more stable experience for everyone.
+    => Video Streaming Throttling:
+        => Example: A video streaming platform like YouTube or Netflix may throttle the video quality depending on the user's internet speed. If the internet connection is slow, the service reduces the video resolution (e.g., from 1080p to 480p) to avoid buffering.
+        => Use case: Prevents excessive buffering and ensures smooth playback for users with slower connections.
+    => Server Throttling:
+        => Example: A web server might throttle the number of concurrent connections it allows from a particular client. If the server detects a sudden surge in requests from a client, it can slow down the processing of those requests instead of rejecting them outright.
+        => Use case: Protects the server from being overwhelmed by too many simultaneous requests and ensures fair distribution of resources.
+    => Database Throttling:
+        => Example: In a database system, throttling might be used to limit the rate at which queries are executed. If too many queries are being sent in parallel, the system may throttle some queries by introducing delays to prevent performance degradation.
+        => Use case: Ensures the database remains responsive by preventing excessive load from simultaneous requests.
+    => Mobile App Throttling:
+        => Example: A mobile app might throttle background data synchronization. Instead of syncing data constantly in the background, it might delay data syncs or reduce the frequency of updates to preserve battery life and prevent high data usage.
+        => Use case: Ensures the app runs efficiently without draining battery or consuming excessive data when the user is not actively using it.
+    => Cloud Service Throttling:    
+        => Example: A cloud service like AWS or Google Cloud might throttle the number of resources or API calls a user can make in a short time. For instance, if a user is scaling their infrastructure rapidly, the cloud provider might throttle the rate at which they can add virtual machines to avoid overloading the infrastructure.
+        => Use case: Protects the system from sudden surges in demand, ensuring stable operation for all users.

@@ -1,0 +1,81 @@
+Single Leader Replication
+    => All writes to one master database
+    => Master Database send list of writes to other database via replication log 
+    => Reads can come from any database 
+
+Increasing Availability
+    => Adding a follower 
+    => On follower crash 
+    => On leader crash
+
+Adding follower 
+    => Initialize the follower using a consistent snapshot of the leader database which is association with position in the replication log 
+    => The follower can now begin accpeting changes from the leader
+
+Dealing with follower crash 
+    => At the time of crash the follower knows where it was up to in the replication log 
+    => On reboot, fetch all the new changes from leader node 
+    => Start implementing the changes in the replication log from the index at which follower node had previously failed
+
+Dealing with a leader crash (failover)
+    => Determine a new leader via some source of censensus (perhaps the most upto date replicas)
+    => Configure all clients to send writes to new leader 
+    => Configure all other followers to get changes from new leader
+
+Problem with failover 
+    => Some write from the previous leader may have been propaageted by only some or no replicas
+        => Leads to either lost data or inconsistent replicas
+    => Accidental failover due to network congestion can hurt our database performance even more
+    => If the old leader comes back, need to ensure that it does not think it is the leader and continue to accept the writes (split brain)
+    
+Types of Single leader replication
+    => Synchronous 
+        => Client does not receive success message until all replicas complete the write 
+        => Strong consistency
+    => Asynchronous
+        => Client receives success message the second the master completes the write 
+        => Eventual consistency
+
+TradeOffs of consistency types 
+    => Strong consistency
+        => Data always up to data but writes take much longer 
+    => Eventual consistency
+        => Writes much faster, but clients can make stale reads to a replicas 
+
+Dealing with eventual consistency
+    => Reading your own Writes 
+        => Don't see write after just making it 
+    => Monotonic reads 
+        => Reads look like they are going back in time
+        => Fix by having each user read from the same replica 
+    => Consistent prefix reads 
+        => Causal relationship between writes lost because writes takes longer to replicate 
+        => Put causally related events on same partition or if not possible keep track of causal dependencies
+
+Reading your own writes 
+    =>  Problem 
+        => You may write a change, read from a replicas and then not see the change 
+    => Solutions 
+        => Always read from leader for editable areas of application
+        => Always read from the leader or up to date replica for some period after a client write
+
+Monotonic Reads 
+    => 
+
+Consistent Prefix Reads 
+    => Msgs in same partition Using timestamps
+
+Replication Log Implementation Options 
+    => Copy over SQL Statements 
+        => Bad because Some SQL statements are nondeterministic (example current time)
+    => Use internal write ahead log 
+        => Not scalable if changing database design engine, which bytes were changes, other database may have different data in different data in different locations on disk 
+     => Use logical log 
+        => Describes which rows were modified and how, allows for more future proofing if the underlying database engine changes in the future. 
+
+Conclusion 
+    Pros 
+        => All writes go throug one machine which ensure consistency across replicas 
+    Cons 
+        => Since all writes have to go through one machine write throughput may not be acceptable 
+            => Either need to partition the dataset and have a single leader per partition or look toward other replication strategy

@@ -1,0 +1,16 @@
+Stateless 
+    => A stateless server keeps no state information.
+    => In this stateless architecture, HTTP requests from users can be sent to any web servers, which fetch state data from a shared data store. State data is stored in a shared data store and kept out of web servers. 
+    => A stateless system is simpler, more robust, and scalable.
+
+Stateful
+    => A stateful server remembers client data (state) from one request to the next. 
+    => User A’s session data and profile image are stored in Server 1. To authenticate
+    User A, HTTP requests must be routed to Server 1. If a request is sent to other servers like
+    Server 2, authentication would fail because Server 2 does not contain User A’s session data.
+    Similarly, all HTTP requests from User B must be routed to Server 2; all requests from User
+    C must be sent to Server 3.
+    The issue is that every request from the same client must be routed to the same server. This
+    can be done with sticky sessions in most load balancers [10]; however, this adds the
+    overhead. Adding or removing servers is much more difficult with this approach. It is also
+    challenging to handle server failures.

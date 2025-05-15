@@ -1,0 +1,52 @@
+MultiLeader Replication
+    => Multiple leader database, possible across data centers
+    => Leader databases send each other writes through some pre-existing topology 
+    => Reads can come from any database
+
+MultiLeader Replication Topologies 
+    => Circular topology
+        => Can easily fail (any node crash for circle)
+    => Star topology
+        => Can easily fail (central node crash for circle)
+    => All to all topology
+        => Can have writes delivered out of order due to race conditions
+
+MultiLeader Replication TradeOffs
+    => Pros
+        => Write throughput get distributed across multiple nodes 
+        => Can have a leader in each data centre, makes having a global service more manageable (outages between datacenters do not break application)
+    => Cons 
+        => Having to deal with write conflicts between multiple leaders
+
+Conflict Resolution 
+    => Conflict Avoidance
+    => Last write wins 
+    => On read 
+    => On write 
+
+Conflict Avoidance
+    => Have all writes to same item go to a given leader 
+    => Not always possible if leader is down or you want to change your database configuration
+
+Last write wins 
+    => Each write is assigned a timestamp, write with latest timestamp is kept 
+    => Pros 
+        => Very easy to implement 
+    => Cons 
+        => Do we use client or server timestamp 
+        => Writes will be lost 
+        => Clock skew on servers means their are not exactly synchronized
+    => Cassandra
+
+On read 
+    => 
+
+On write 
+    => 
+
+Detecting Concurrent Writes 
+    => 
+
+CRDTS
+
+Version Vector

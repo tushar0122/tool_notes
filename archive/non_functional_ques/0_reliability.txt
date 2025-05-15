@@ -1,0 +1,2 @@
+Reliability
+    => To have reliable we need high performance and scalable system

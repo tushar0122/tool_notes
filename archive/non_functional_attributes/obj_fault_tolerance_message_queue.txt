@@ -1,0 +1,2 @@
+Message Queue 
+    => Messages can be persisted, allowing recovery from failures.

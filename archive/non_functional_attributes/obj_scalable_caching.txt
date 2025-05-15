@@ -1,0 +1,3 @@
+Dsitrubuted Caching
+    => Distributed caching refers to a caching system where data is stored across multiple servers or nodes, instead of a single machine. The goal of distributed caching is to increase scalability, reduce latency, and improve performance for applications, especially in a distributed system or cloud environment.
+    => Distributed caching allows you to scale your application horizontally (add more servers) while maintaining fast data retrieval times, as the cache can grow with the system.

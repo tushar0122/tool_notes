@@ -1,0 +1,4 @@
+CDN 
+    => A Content Delivery Network (CDN) is a system of distributed servers (also called edge servers) strategically placed around the world to deliver web content (such as images, videos, HTML files, JavaScript, CSS, etc.) and other resources to users based on their geographic location. The goal of a CDN is to optimize content delivery by reducing latency, speeding up load times, and improving the availability and scalability of your web applications.
+    => CDNs work by caching content at multiple points-of-presence (PoPs), which are data centers located in different geographic regions. When a user makes a request for a specific piece of content, the CDN directs that request to the nearest edge server to reduce the distance and time it takes for the data to travel, resulting in faster response times.
+

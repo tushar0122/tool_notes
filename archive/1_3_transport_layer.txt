@@ -1,0 +1,17 @@
+Transport Layer 
+    => TCP/IP 
+    => UDP/IP  
+
+TCP/IP 
+    => We maintain virtual Connection
+    => Data packets are sent 
+    => Ordering maintained 
+    => Each packet is acknowleged
+    => If packet is not acknowleged, again sent 
+
+UDP/IP 
+    => No Connection maintained 
+    => No ordering 
+    => No acknowlegement
+    => Fast than TCP/IP 
+    => Used in video calling, live streaming
