@@ -1,0 +1,7 @@
+Kubernetes lets you run complex, stateful apps with persistent storage and custom networking.
+
+It supports multi-container pods, long-running background jobs, and hardware access like GPUs.
+
+Cloud Run only runs stateless, single-container apps triggered by HTTP requests.
+
+Cloud Run is fully managed with no infra control, so it can’t handle advanced workloads Kubernetes can.

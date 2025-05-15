@@ -1,0 +1,7 @@
+App Engine is a fully managed platform for running apps without worrying about infrastructure, ideal for simple web apps and APIs.
+
+It handles scaling, load balancing, and deployments automatically with minimal configuration.
+
+Kubernetes gives you full control to run complex, containerized apps with custom networking, storage, and scaling.
+
+But Kubernetes requires managing clusters and more DevOps effort compared to App Engine’s easy serverless experience.

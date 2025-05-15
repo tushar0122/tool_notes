@@ -1,0 +1,11 @@
+A service mesh is a dedicated infrastructure layer for managing communication between microservices in a distributed application.
+
+Here’s a simple explanation:
+
+It handles how services talk to each other—taking care of routing, load balancing, retries, and security (like encryption and authentication).
+
+It’s usually implemented with lightweight proxies (called sidecars) deployed alongside each service instance.
+
+This lets developers focus on business logic while the mesh manages traffic control, observability (monitoring, tracing), and resilience across services.
+
+In short: a service mesh makes microservices communication reliable, secure, and observable without changing app code.
