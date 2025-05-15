@@ -1,0 +1,6 @@
+synchronized automatically acquires the lock when entering the block or method, and releases it when exiting (even if an exception occurs).
+Blocks 
+Explicit unlocking	
+
+ReentrantLock requires you to explicitly call lock() and unlock(), usually in try-finally to avoid deadlocks.
+Try to acquire lock without blocking

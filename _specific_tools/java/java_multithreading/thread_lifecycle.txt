@@ -1,0 +1,6 @@
+Wait 
+    => releases lock/wait 
+    => Wait indefinetly till notify 
+
+Sleep 
+    => Wait till given time
