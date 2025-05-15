@@ -1,0 +1,8 @@
+AutoConfiguration
+It’s a feature in Spring Boot that automatically configures your application based on the libraries and settings you have on your classpath.
+
+For example, if you include spring-boot-starter-web, Spring Boot will auto-configure an embedded Tomcat server, Spring MVC, and other web settings without you writing any XML or Java config.
+
+Auto-configuration saves you from manually setting up beans, data sources, transaction managers, and more. It “just works” based on what dependencies you add.
+
+You can still override or customize these auto-configurations by defining your own beans or using properties.

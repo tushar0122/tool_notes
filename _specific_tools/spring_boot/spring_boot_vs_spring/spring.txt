@@ -1,0 +1,7 @@
+Spring Framework is the core Java framework that provides comprehensive infrastructure support for building Java applications, like dependency injection, AOP, transaction management, and more.
+
+Spring Boot is built on top of Spring Framework and simplifies application setup by providing auto-configuration, embedded servers, and starter dependencies so you can create standalone, production-ready apps quickly.
+
+With Spring, you configure lots of things manually, while Spring Boot automates configuration to reduce boilerplate and speed up development.
+
+Basically, Spring Boot is Spring made easier and faster to use
