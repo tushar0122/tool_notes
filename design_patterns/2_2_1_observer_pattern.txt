@@ -1,0 +1,9 @@
+Implement notify me in e-commerce website when product is available 
+
+Observer design pattern
+=> Observable 
+    => State 
+        => When state changes, it notifies all observers 
+=> Observer
+
+Used in subscribe and notify

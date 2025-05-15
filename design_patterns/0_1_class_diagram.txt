@@ -1,0 +1,7 @@
+Has A relationship
+    => class A directed to class B
+        => where class A contain object of class B
+
+Is A relationship
+    => class A directed to class B 
+        => where class A inherits from class B
