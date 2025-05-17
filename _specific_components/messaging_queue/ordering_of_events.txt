@@ -1,0 +1,1 @@
+Partitioning Key in kafka is used for events to be processed in order
